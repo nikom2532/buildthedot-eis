@@ -1,0 +1,40 @@
+﻿.patternInput 
+{
+    background-color: RGBA(0,0,0,0.5);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.patternInput .dot
+{
+    background-color: RGBA(0,0,0,0.5);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 3px solid #AAAAAA;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.patternInput .innerDot 
+{
+    margin: -2px;
+    background-color: #FFFFFF;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.patternInput .selected
+{
+    border: 3px solid #84ff00;
+    -webkit-box-shadow: 0px 0px 32px rgba(132, 255, 0, 0.70);
+}

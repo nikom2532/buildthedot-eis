@@ -1,0 +1,150 @@
+﻿body 
+{
+    margin: 0px 0px 0px 0px;
+    font: 0.85em "Open Sans", "Segoe UI", verdana, Arial, Helvetica, Sans-Serif;
+}
+
+/* Page Layout / Styles */
+
+.leftMenu 
+{
+    background-image: url(Images/menu_bg.png);
+}
+
+.titleBar 
+{
+    margin-left: 0px;
+    background-color: #474544;
+    height: 50px;
+    padding-left: 10px;
+}
+
+.titleText
+{
+    color: #dddddd;
+    line-height: 50px;
+    font-family: 'Segoe UI Web Light', 'Segoe UI Light', 'Segoe UI Web Regular', 'Segoe UI', 'Segoe UI Symbol', 'Helvetica Neue', Arial;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    float: left;
+}
+
+.titleButton 
+{
+    line-height: 50px;
+    font-family: 'Segoe UI Web Light', 'Segoe UI Light', 'Segoe UI Web Regular', 'Segoe UI', 'Segoe UI Symbol', 'Helvetica Neue', Arial;
+    font-size: 15px;
+    height: 50px;
+    float: right;
+    padding-right: 15px;
+}
+
+.companyLogo 
+{
+    background-image: url(Images/main_logo.png);
+    background-repeat: no-repeat;
+    background-position: 26px 3px;
+    height: 49px;
+}
+
+.menuSeparater 
+{
+    background-image: url(Images/menu_separater.png);
+    background-repeat:repeat-x;
+    height: 2px;
+}
+
+.menuItem 
+{
+    width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left:2px;
+    text-align: left;
+    cursor: pointer;
+    color: #9b9b9b;
+}
+
+.menuSelected
+{
+    padding-left:0px;
+    border-left: 2px solid Red;
+    background-image: url(Images/menu_arrow.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    color: White;
+}
+
+.menuContent
+{
+    padding-left: 10px;
+    font-family: 'Segoe UI Web Light', 'Segoe UI Light', 'Segoe UI Web Regular', 'Segoe UI', 'Segoe UI Symbol', 'Helvetica Neue', Arial;
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+}
+
+.menuItem:hover 
+{
+    color: White;
+}
+
+.parameterPanel 
+{
+}
+
+.mainPanel 
+{
+    padding-top: 10px;
+    padding-left: 10px;
+    height:100%;
+    font-size: 16px;
+}
+
+.noResultPanel
+{
+    padding-top: 10px;
+    padding-left: 10px;
+    height:100%;
+    color: #cbcbcb;
+    font-family: 'Segoe UI Web Light', 'Segoe UI Light', 'Segoe UI Web Regular', 'Segoe UI', 'Segoe UI Symbol', 'Helvetica Neue', Arial;
+    font-size: 21px;
+    font-weight: normal;
+}
+
+.yearListItem
+{
+    width: 200px;
+    float: left;
+    border: 1px solid #AAAAAA;
+    cursor: pointer;
+}
+
+.yearListItem:hover
+{
+    background-color: #DDDDDD;
+}
+
+.yearListItem .yearLabel
+{
+    font-size: 48px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.yearListItem .yearDeleteIcon 
+{
+    background-color: #3A3633;
+    color: White;
+    text-align: center;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+.contentPanel 
+{
+    padding-top: 15px;
+}

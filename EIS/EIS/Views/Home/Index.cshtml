@@ -1,0 +1,166 @@
+﻿<div id="leftPanel" class="ui-layout-west leftMenu">
+    <div class="companyLogo"></div>
+    <div class="menuSeparater"></div>
+    <div class="menuItem" rel="yearSetup"><span class="menuContent">ตั้งค่าปีข้อมูล</span></div>
+    <div class="menuSeparater"></div>
+    <div class="menuItem" rel="numberOfEmployee"><span class="menuContent">อัตรากำลัง</span></div>
+    <div class="menuSeparater"></div>
+    <div class="menuItem" rel="estimatedRetirement"><span class="menuContent">อัตรากำลังเกษียณ</span></div>
+    <div class="menuSeparater"></div>
+    <div class="menuItem" rel="estimatedFundMember"><span class="menuContent">สมาชิก กบข/กสจ</span></div>
+    <div class="menuSeparater"></div>
+    <div class="menuItem" rel="budgetUsage"><span class="menuContent">งบประมาณภาพรวม</span></div>
+    <div class="menuSeparater"></div>
+    <div class="menuItem" rel="employeeRelatedBudgetUsage"><span class="menuContent">งบบุคลากร</span></div>
+    <div class="menuSeparater"></div>
+    <div class="menuItem" rel="retirementFundUsage"><span class="menuContent">บำเหน็จบำนาญ</span></div>
+    <div class="menuSeparater"></div>
+    <div class="menuItem" rel="warrantFund"><span class="menuContent">บำเหน็จค้ำประกัน</span></div>
+    <div class="menuSeparater"></div>
+    <div class="menuItem" rel="firstCarStatus"><span class="menuContent">รถคันแรก</span></div>
+    <div class="menuSeparater"></div>
+    <div class="menuItem" rel="bankLoanApproval"><span class="menuContent">เงินกู้สถาบันการเงิน</span></div>
+    <div class="menuSeparater"></div>
+
+</div>
+<div id="rightPanel" class="ui-layout-center" style="overflow-y: scroll;">
+    <div id="titlePanel" class="ui-layout-north titleBar">
+        <div id="yearSetupTitle" style="display:none;">
+            <div class="titleText">ตั้งค่าปีข้อมูล</div>
+        </div>
+        <div id="numberOfEmployeeTitle" style="display:none;">
+            <div class="titleText">อัตรากำลัง</div>
+        </div>
+        <div id="estRetirementTitle" style="display:none;">
+            <div class="titleText">ประมาณการอัตรากำลังเกษียณ</div>
+        </div>
+        <div id="estFundMemberTitle" style="display:none;">
+            <div class="titleText">ประมาณการสมาชิก กบข./กสจ.</div>
+        </div>
+        <div id="budgetTitle" style="display:none;">
+            <div class="titleText">เงินงบประมาณในภาพรวม</div>
+        </div>
+        <div id="empBudgetTitle" style="display:none;">
+            <div class="titleText">งบบุคลากร</div>
+        </div>
+        <div id="retirementFundTitle" style="display:none;">
+            <div class="titleText">บำเหน็จ-บำนาญ</div>
+        </div>
+        <div id="warrentFundTitle" style="display:none;">
+            <div class="titleText">บำเหน็จค้ำประกัน</div>
+        </div>
+        <div id="firstCarTitle" style="display:none;">
+            <div class="titleText">โครงการรถคันแรก</div>
+        </div>
+        <div id="bankLoanTitle" style="display:none;">
+            <div class="titleText">การอนุมัติเงินกู้ของสถาบันการเงิน</div>
+        </div>
+    </div>
+    <div class="ui-layout-center k-content">
+        <div id="yearSetupPanel" class="mainPanel" style="display:none;">
+            <script type="text/x-kendo-tmpl" id="yearItemTemplate">
+                <div class="yearListItem">
+                    <div class="yearDeleteIcon">Year</div>
+                    <div class="yearLabel">${Year}</div>
+                </div>
+            </script>
+            <label for="fullname">เพิ่มปีข้อมูล</label>
+            <input type="text" id="addYearField" class="k-textbox" placeholder="ปี พ.ศ. เข่น 2556"></input>
+            <input type="button" id="addYearButton" class="k-button" value="เพิ่มข้อมูล"></input>
+            <input type="button" id="removeYearButton" class="k-button" value="ลบข้อมูลที่เลือก"></input>
+            <br>
+            <br>
+            <div id="yearListView" style="height:500px; border:0px;"></div>
+        </div>
+        <div id="numberOfEmployeePanel" class="mainPanel" style="display:none;">
+            <div class="ui-layout-north parameterPanel">
+                <label for="fullname">ปีที่ต้องการแก้ไข </label>
+                <select id="numberOfEmployeeSelectedYearField" style="width:100px;"></select>
+                <input type="button" id="numberOfEmployeeSelectYearButton" class="k-button" value="เลือกปี"></input>
+            </div>
+            <div id="numberOfEmployeeContentPanel" class="ui-layout-center contentPanel" style="display:none">
+                <div id="numberOfEmployeeGrid"></div>
+            </div>
+        </div>
+        <div id="estimatedRetirementPanel" class="mainPanel" style="display:none;">
+            <div class="ui-layout-north parameterPanel">
+                <label for="fullname">ปีที่ต้องการแก้ไข </label>
+                <select id="estimatedRetirementSelectedYearField" style="width:100px;"></select>
+                <input type="button" id="estimatedRetirementSelectYearButton" class="k-button" value="เลือกปี"></input>
+            </div>
+            <div id="estimatedRetirementContentPanel" class="ui-layout-center contentPanel" style="display:none">
+                <div id="estimatedRetirementGrid"></div>
+            </div>
+        </div>
+        <div id="estimatedFundMemberPanel" class="mainPanel" style="display:none;">
+            <div class="ui-layout-north parameterPanel">
+                <label for="fullname">ปีที่ต้องการแก้ไข </label>
+                <select id="estimatedFundMemberSelectedYearField" style="width:100px;"></select>
+                <input type="button" id="estimatedFundMemberSelectYearButton" class="k-button" value="เลือกปี"></input>
+            </div>
+            <div id="estimatedFundMemberContentPanel" class="ui-layout-center contentPanel" style="display:none">
+                <div id="estimatedFundMemberGrid"></div>
+            </div>
+        </div>
+        <div id="budgetUsagePanel" class="mainPanel" style="display:none;">
+            <div class="ui-layout-north parameterPanel">
+                <label for="fullname">ปีที่ต้องการแก้ไข </label>
+                <select id="budgetUsageSelectedYearField" style="width:100px;"></select>
+                <input type="button" id="budgetUsageSelectYearButton" class="k-button" value="เลือกปี"></input>
+            </div>
+            <div id="budgetUsageContentPanel" class="ui-layout-center contentPanel" style="display:none">
+                <div id="budgetUsageGrid"></div>
+            </div>
+        </div>
+        <div id="employeeRelatedBudgetUsagePanel" class="mainPanel" style="display:none;">
+            <div class="ui-layout-north parameterPanel">
+                <label for="fullname">ปีที่ต้องการแก้ไข </label>
+                <select id="employeeRelatedBudgetUsageSelectedYearField" style="width:100px;"></select>
+                <input type="button" id="employeeRelatedBudgetUsageSelectYearButton" class="k-button" value="เลือกปี"></input>
+            </div>
+            <div id="employeeRelatedBudgetUsageContentPanel" class="ui-layout-center contentPanel" style="display:none">
+                <div id="employeeRelatedBudgetUsageGrid"></div>
+            </div>
+        </div>
+        <div id="retirementFundUsagePanel" class="mainPanel" style="display:none;">
+            <div class="ui-layout-north parameterPanel">
+                <label for="fullname">ปีที่ต้องการแก้ไข </label>
+                <select id="retirementFundUsageSelectedYearField" style="width:100px;"></select>
+                <input type="button" id="retirementFundUsageSelectYearButton" class="k-button" value="เลือกปี"></input>
+            </div>
+            <div id="retirementFundUsageContentPanel" class="ui-layout-center contentPanel" style="display:none">
+                <div id="retirementFundUsageGrid"></div>
+            </div>
+        </div>
+        <div id="warrantFundPanel" class="mainPanel" style="display:none;">
+            <div class="ui-layout-north parameterPanel">
+                <label for="fullname">ปีที่ต้องการแก้ไข </label>
+                <select id="warrantFundSelectedYearField" style="width:100px;"></select>
+                <input type="button" id="warrantFundSelectYearButton" class="k-button" value="เลือกปี"></input>
+            </div>
+            <div id="warrantFundContentPanel" class="ui-layout-center contentPanel" style="display:none">
+                <div id="warrantFundGrid"></div>
+            </div>
+        </div>
+        <div id="firstCarStatusPanel" class="mainPanel" style="display:none;">
+            <div class="ui-layout-north parameterPanel">
+                <label for="fullname">ปีที่ต้องการแก้ไข </label>
+                <select id="firstCarStatusSelectedYearField" style="width:100px;"></select>
+                <input type="button" id="firstCarStatusSelectYearButton" class="k-button" value="เลือกปี"></input>
+            </div>
+            <div id="firstCarStatusContentPanel" class="ui-layout-center contentPanel" style="display:none">
+                <div id="firstCarStatusGrid"></div>
+            </div>
+        </div>
+        <div id="bankLoanApprovalPanel" class="mainPanel" style="display:none;">
+            <div class="ui-layout-north parameterPanel">
+                <label for="fullname">ปีที่ต้องการแก้ไข </label>
+                <select id="bankLoanApprovalSelectedYearField" style="width:100px;"></select>
+                <input type="button" id="bankLoanApprovalSelectYearButton" class="k-button" value="เลือกปี"></input>
+            </div>
+            <div id="bankLoanApprovalContentPanel" class="ui-layout-center contentPanel" style="display:none">
+                <div id="bankLoanApprovalGrid"></div>
+            </div>
+        </div>
+    </div>
+</div>
