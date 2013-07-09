@@ -25,11 +25,11 @@
     <script src="Scripts/ContentPanel.js" type="text/javascript"></script>
     <script src="Scripts/PageScript.js" type="text/javascript"></script>
 </head>
-<body>Ming
+<body>
     <div id="container" style="height:100%; position:relative;">
       <div id="titleBar" style="margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; position:absolute; left:0px; top:0px; z-index:5; width:1024px; height:  139px;"></div>
         <div id="footer" style="height:51px; position:absolute; bottom:0px; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; z-index: 5;">
-            <img src="Images/footer.png" width="1024" height="51" />
+            <img src="Images/iPad/footer.png" width="1024" height="51" />
         </div>
         <div id="loadingPanel" style="display:none; top: 50px; left:0px; width:320px; height:370px; position: absolute;">
             <div class="semiTransparentBox" style="position: absolute; top: 120px; left: 85px; width: 150px; height: 100px;">

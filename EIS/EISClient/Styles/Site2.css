@@ -12,14 +12,14 @@
 #titleBar 
 {
     font-family: menu_font;
-    background: url(../Images/title.png);
+    background: url(../Images/iPad/title.png);
     background-repeat: no-repeat;
     background-size: 1024px 139px;
 }
 
 #container 
 {
-    background: url(../Images/menuBackground.png);
+    background: url(../Images/iPad/menuBackground.png);
     background-repeat: no-repeat;
     background-size: 1024px 504px;
     background-position: 0px 131px;
@@ -38,7 +38,7 @@
 
 .okButton 
 {
-    background: url(../Images/buttonOK.png);
+    background: url(../Images/iPad/buttonOK.png);
     background-repeat: no-repeat;
     background-size: 64px 58px;
     background-position: 0px 0px;
