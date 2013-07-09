@@ -9,7 +9,8 @@ namespace EISClient {
     public partial class _Default : System.Web.UI.Page {
 
         protected void Page_Load(object sender, EventArgs e) {
-            Server.Transfer("iPhone.aspx");
+            //Server.Transfer("iPhone.aspx");
+            Server.Transfer("iPad.aspx");
         }
     }
 }

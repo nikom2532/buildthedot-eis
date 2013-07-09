@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EISModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="eisEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="availableyears" EntityType="EISModel.availableyear" />
+    <EntitySet Name="bankloanapprovals" EntityType="EISModel.bankloanapproval" />
+    <EntitySet Name="banktypes" EntityType="EISModel.banktype" />
+    <EntitySet Name="budgettypes" EntityType="EISModel.budgettype" />
+    <EntitySet Name="budgetusages" EntityType="EISModel.budgetusage" />
+    <EntitySet Name="employeerelatedbudgettypes" EntityType="EISModel.employeerelatedbudgettype" />
+    <EntitySet Name="employeerelatedbudgetusages" EntityType="EISModel.employeerelatedbudgetusage" />
+    <EntitySet Name="employeetypes" EntityType="EISModel.employeetype" />
+    <EntitySet Name="estimatedfundmembers" EntityType="EISModel.estimatedfundmember" />
+    <EntitySet Name="estimatedretirements" EntityType="EISModel.estimatedretirement" />
+    <EntitySet Name="firstcarstatus" EntityType="EISModel.firstcarstatu" />
+    <EntitySet Name="firstcarstatustypes" EntityType="EISModel.firstcarstatustype" />
+    <EntitySet Name="fundmembertypes" EntityType="EISModel.fundmembertype" />
+    <EntitySet Name="numberofemployees" EntityType="EISModel.numberofemployee" />
+    <EntitySet Name="retirementfundtypes" EntityType="EISModel.retirementfundtype" />
+    <EntitySet Name="retirementfundusages" EntityType="EISModel.retirementfundusage" />
+    <EntitySet Name="retirementtypes" EntityType="EISModel.retirementtype" />
+    <EntitySet Name="warrantfundproviders" EntityType="EISModel.warrantfundprovider" />
+    <EntitySet Name="warrantfundprovidings" EntityType="EISModel.warrantfundproviding" />
+    <AssociationSet Name="FK_BankType" Association="EISModel.FK_BankType">
+      <End Role="banktype" EntitySet="banktypes" />
+      <End Role="bankloanapproval" EntitySet="bankloanapprovals" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BudgetType" Association="EISModel.FK_BudgetType">
+      <End Role="budgettype" EntitySet="budgettypes" />
+      <End Role="budgetusage" EntitySet="budgetusages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmployeeRelatedBudgetType" Association="EISModel.FK_EmployeeRelatedBudgetType">
+      <End Role="employeerelatedbudgettype" EntitySet="employeerelatedbudgettypes" />
+      <End Role="employeerelatedbudgetusage" EntitySet="employeerelatedbudgetusages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmployeeType" Association="EISModel.FK_EmployeeType">
+      <End Role="employeetype" EntitySet="employeetypes" />
+      <End Role="numberofemployee" EntitySet="numberofemployees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FundMemberType" Association="EISModel.FK_FundMemberType">
+      <End Role="fundmembertype" EntitySet="fundmembertypes" />
+      <End Role="estimatedfundmember" EntitySet="estimatedfundmembers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RetirementType" Association="EISModel.FK_RetirementType">
+      <End Role="retirementtype" EntitySet="retirementtypes" />
+      <End Role="estimatedretirement" EntitySet="estimatedretirements" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FirstCarStatusType" Association="EISModel.FK_FirstCarStatusType">
+      <End Role="firstcarstatustype" EntitySet="firstcarstatustypes" />
+      <End Role="firstcarstatus" EntitySet="firstcarstatus" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RetirementFundType" Association="EISModel.FK_RetirementFundType">
+      <End Role="retirementfundtype" EntitySet="retirementfundtypes" />
+      <End Role="retirementfundusage" EntitySet="retirementfundusages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WarrantFundProvider" Association="EISModel.FK_WarrantFundProvider">
+      <End Role="warrantfundprovider" EntitySet="warrantfundproviders" />
+      <End Role="warrantfundproviding" EntitySet="warrantfundprovidings" />
+    </AssociationSet>
+    <EntitySet Name="users" EntityType="EISModel.user" />
+  </EntityContainer>
+  <EntityType Name="availableyear">
+    <Key>
+      <PropertyRef Name="Year" />
+    </Key>
+    <Property Name="Year" Type="Int32" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bankloanapproval">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+    <Property Name="BankTypeId" Type="Int32" Nullable="false" />
+    <Property Name="NumberOfPeople" Type="Int32" Nullable="false" />
+    <Property Name="Amount" Type="Decimal" Nullable="false" />
+    <Property Name="LastUpdated" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="banktype" Relationship="EISModel.FK_BankType" FromRole="bankloanapproval" ToRole="banktype" />
+  </EntityType>
+  <EntityType Name="banktype">
+    <Key>
+      <PropertyRef Name="BankTypeId" />
+    </Key>
+    <Property Name="BankTypeId" Type="Int32" Nullable="false" />
+    <Property Name="BankName" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="bankloanapprovals" Relationship="EISModel.FK_BankType" FromRole="banktype" ToRole="bankloanapproval" />
+  </EntityType>
+  <EntityType Name="budgettype">
+    <Key>
+      <PropertyRef Name="BudgetTypeId" />
+    </Key>
+    <Property Name="BudgetTypeId" Type="Int32" Nullable="false" />
+    <Property Name="TypeName" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="budgetusages" Relationship="EISModel.FK_BudgetType" FromRole="budgettype" ToRole="budgetusage" />
+  </EntityType>
+  <EntityType Name="budgetusage">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+    <Property Name="BudgetType" Type="Int32" Nullable="false" />
+    <Property Name="BudgetAmount" Type="Decimal" Nullable="false" />
+    <Property Name="Used" Type="Decimal" Nullable="false" />
+    <Property Name="LastUpdated" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="budgettype1" Relationship="EISModel.FK_BudgetType" FromRole="budgetusage" ToRole="budgettype" />
+  </EntityType>
+  <EntityType Name="employeerelatedbudgettype">
+    <Key>
+      <PropertyRef Name="EmployeeRelatedBudgetTypeId" />
+    </Key>
+    <Property Name="EmployeeRelatedBudgetTypeId" Type="Int32" Nullable="false" />
+    <Property Name="TypeName" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="employeerelatedbudgetusages" Relationship="EISModel.FK_EmployeeRelatedBudgetType" FromRole="employeerelatedbudgettype" ToRole="employeerelatedbudgetusage" />
+  </EntityType>
+  <EntityType Name="employeerelatedbudgetusage">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+    <Property Name="EmployeeRelatedBudgetTypeId" Type="Int32" Nullable="false" />
+    <Property Name="Amount" Type="Decimal" Nullable="false" />
+    <Property Name="LastUpdated" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="employeerelatedbudgettype" Relationship="EISModel.FK_EmployeeRelatedBudgetType" FromRole="employeerelatedbudgetusage" ToRole="employeerelatedbudgettype" />
+  </EntityType>
+  <EntityType Name="employeetype">
+    <Key>
+      <PropertyRef Name="EmployeeTypeId" />
+    </Key>
+    <Property Name="EmployeeTypeId" Type="Int32" Nullable="false" />
+    <Property Name="TypeName" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="numberofemployees" Relationship="EISModel.FK_EmployeeType" FromRole="employeetype" ToRole="numberofemployee" />
+  </EntityType>
+  <EntityType Name="estimatedfundmember">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+    <Property Name="FundMemberTypeId" Type="Int32" Nullable="false" />
+    <Property Name="EstimatedValue" Type="Int32" Nullable="false" />
+    <Property Name="LastUpdated" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="fundmembertype" Relationship="EISModel.FK_FundMemberType" FromRole="estimatedfundmember" ToRole="fundmembertype" />
+  </EntityType>
+  <EntityType Name="estimatedretirement">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+    <Property Name="RetirementTypeId" Type="Int32" Nullable="false" />
+    <Property Name="EstimatedValue" Type="Int32" Nullable="false" />
+    <Property Name="LastUpdated" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="retirementtype" Relationship="EISModel.FK_RetirementType" FromRole="estimatedretirement" ToRole="retirementtype" />
+  </EntityType>
+  <EntityType Name="firstcarstatu">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+    <Property Name="StatusTypeId" Type="Int32" Nullable="false" />
+    <Property Name="NumberOfPeople" Type="Int32" Nullable="false" />
+    <Property Name="Amount" Type="Decimal" Nullable="false" />
+    <Property Name="LastUpdated" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="firstcarstatustype" Relationship="EISModel.FK_FirstCarStatusType" FromRole="firstcarstatus" ToRole="firstcarstatustype" />
+  </EntityType>
+  <EntityType Name="firstcarstatustype">
+    <Key>
+      <PropertyRef Name="FirstCarStatusTypeId" />
+    </Key>
+    <Property Name="FirstCarStatusTypeId" Type="Int32" Nullable="false" />
+    <Property Name="StatusName" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="firstcarstatus" Relationship="EISModel.FK_FirstCarStatusType" FromRole="firstcarstatustype" ToRole="firstcarstatus" />
+  </EntityType>
+  <EntityType Name="fundmembertype">
+    <Key>
+      <PropertyRef Name="FundMemberTypeId" />
+    </Key>
+    <Property Name="FundMemberTypeId" Type="Int32" Nullable="false" />
+    <Property Name="TypeName" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="estimatedfundmembers" Relationship="EISModel.FK_FundMemberType" FromRole="fundmembertype" ToRole="estimatedfundmember" />
+  </EntityType>
+  <EntityType Name="numberofemployee">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+    <Property Name="EmployeeTypeId" Type="Int32" Nullable="false" />
+    <Property Name="GovernmentOfficer" Type="Int32" Nullable="false" />
+    <Property Name="PermanentContractor" Type="Int32" Nullable="false" />
+    <Property Name="GeneralOfficer" Type="Int32" Nullable="false" />
+    <Property Name="LastUpdated" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="employeetype" Relationship="EISModel.FK_EmployeeType" FromRole="numberofemployee" ToRole="employeetype" />
+  </EntityType>
+  <EntityType Name="retirementfundtype">
+    <Key>
+      <PropertyRef Name="RetirementFundTypeId" />
+    </Key>
+    <Property Name="RetirementFundTypeId" Type="Int32" Nullable="false" />
+    <Property Name="TypeName" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="retirementfundusages" Relationship="EISModel.FK_RetirementFundType" FromRole="retirementfundtype" ToRole="retirementfundusage" />
+  </EntityType>
+  <EntityType Name="retirementfundusage">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+    <Property Name="RetirementFundTypeId" Type="Int32" Nullable="false" />
+    <Property Name="NumberOfPeople" Type="Int32" Nullable="false" />
+    <Property Name="NumberOfUsage" Type="Decimal" Nullable="false" />
+    <Property Name="LastUpdated" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="retirementfundtype" Relationship="EISModel.FK_RetirementFundType" FromRole="retirementfundusage" ToRole="retirementfundtype" />
+  </EntityType>
+  <EntityType Name="retirementtype">
+    <Key>
+      <PropertyRef Name="RetirementTypeId" />
+    </Key>
+    <Property Name="RetirementTypeId" Type="Int32" Nullable="false" />
+    <Property Name="TypeName" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="estimatedretirements" Relationship="EISModel.FK_RetirementType" FromRole="retirementtype" ToRole="estimatedretirement" />
+  </EntityType>
+  <EntityType Name="warrantfundprovider">
+    <Key>
+      <PropertyRef Name="WarrantFundProviderId" />
+    </Key>
+    <Property Name="WarrantFundProviderId" Type="Int32" Nullable="false" />
+    <Property Name="ProviderName" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="warrantfundprovidings" Relationship="EISModel.FK_WarrantFundProvider" FromRole="warrantfundprovider" ToRole="warrantfundproviding" />
+  </EntityType>
+  <EntityType Name="warrantfundproviding">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+    <Property Name="WarrantFundProviderId" Type="Int32" Nullable="false" />
+    <Property Name="NumberOfPeople" Type="Int32" Nullable="false" />
+    <Property Name="Amount" Type="Decimal" Nullable="false" />
+    <Property Name="LastUpdated" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="warrantfundprovider" Relationship="EISModel.FK_WarrantFundProvider" FromRole="warrantfundproviding" ToRole="warrantfundprovider" />
+  </EntityType>
+  <Association Name="FK_BankType">
+    <End Role="banktype" Type="EISModel.banktype" Multiplicity="1" />
+    <End Role="bankloanapproval" Type="EISModel.bankloanapproval" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="banktype">
+        <PropertyRef Name="BankTypeId" />
+      </Principal>
+      <Dependent Role="bankloanapproval">
+        <PropertyRef Name="BankTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BudgetType">
+    <End Role="budgettype" Type="EISModel.budgettype" Multiplicity="1" />
+    <End Role="budgetusage" Type="EISModel.budgetusage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="budgettype">
+        <PropertyRef Name="BudgetTypeId" />
+      </Principal>
+      <Dependent Role="budgetusage">
+        <PropertyRef Name="BudgetType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmployeeRelatedBudgetType">
+    <End Role="employeerelatedbudgettype" Type="EISModel.employeerelatedbudgettype" Multiplicity="1" />
+    <End Role="employeerelatedbudgetusage" Type="EISModel.employeerelatedbudgetusage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="employeerelatedbudgettype">
+        <PropertyRef Name="EmployeeRelatedBudgetTypeId" />
+      </Principal>
+      <Dependent Role="employeerelatedbudgetusage">
+        <PropertyRef Name="EmployeeRelatedBudgetTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmployeeType">
+    <End Role="employeetype" Type="EISModel.employeetype" Multiplicity="1" />
+    <End Role="numberofemployee" Type="EISModel.numberofemployee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="employeetype">
+        <PropertyRef Name="EmployeeTypeId" />
+      </Principal>
+      <Dependent Role="numberofemployee">
+        <PropertyRef Name="EmployeeTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FundMemberType">
+    <End Role="fundmembertype" Type="EISModel.fundmembertype" Multiplicity="1" />
+    <End Role="estimatedfundmember" Type="EISModel.estimatedfundmember" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="fundmembertype">
+        <PropertyRef Name="FundMemberTypeId" />
+      </Principal>
+      <Dependent Role="estimatedfundmember">
+        <PropertyRef Name="FundMemberTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RetirementType">
+    <End Role="retirementtype" Type="EISModel.retirementtype" Multiplicity="1" />
+    <End Role="estimatedretirement" Type="EISModel.estimatedretirement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="retirementtype">
+        <PropertyRef Name="RetirementTypeId" />
+      </Principal>
+      <Dependent Role="estimatedretirement">
+        <PropertyRef Name="RetirementTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FirstCarStatusType">
+    <End Role="firstcarstatustype" Type="EISModel.firstcarstatustype" Multiplicity="1" />
+    <End Role="firstcarstatus" Type="EISModel.firstcarstatu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="firstcarstatustype">
+        <PropertyRef Name="FirstCarStatusTypeId" />
+      </Principal>
+      <Dependent Role="firstcarstatus">
+        <PropertyRef Name="StatusTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RetirementFundType">
+    <End Role="retirementfundtype" Type="EISModel.retirementfundtype" Multiplicity="1" />
+    <End Role="retirementfundusage" Type="EISModel.retirementfundusage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="retirementfundtype">
+        <PropertyRef Name="RetirementFundTypeId" />
+      </Principal>
+      <Dependent Role="retirementfundusage">
+        <PropertyRef Name="RetirementFundTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WarrantFundProvider">
+    <End Role="warrantfundprovider" Type="EISModel.warrantfundprovider" Multiplicity="1" />
+    <End Role="warrantfundproviding" Type="EISModel.warrantfundproviding" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="warrantfundprovider">
+        <PropertyRef Name="WarrantFundProviderId" />
+      </Principal>
+      <Dependent Role="warrantfundproviding">
+        <PropertyRef Name="WarrantFundProviderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Type="Int32" Name="UserId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="FullName" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Password" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SHA1" MaxLength="40" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>
