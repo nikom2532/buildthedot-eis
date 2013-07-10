@@ -37,7 +37,6 @@ C:\AppServ\www\buildthedot\EIF\buildthedot-eis\EIS\EISClient\bin\EISClient.pdb
 C:\AppServ\www\buildthedot\EIF\buildthedot-eis\EIS\EISClient\bin\EntityFramework.dll
 C:\AppServ\www\buildthedot\EIF\buildthedot-eis\EIS\EISClient\bin\MySql.Data.dll
 C:\AppServ\www\buildthedot\EIF\buildthedot-eis\EIS\EISClient\bin\MySql.Data.Entity.dll
-C:\AppServ\www\buildthedot\EIF\buildthedot-eis\EIS\EISClient\bin\MySql.Web.dll
 C:\AppServ\www\buildthedot\EIF\buildthedot-eis\EIS\EISClient\bin\EntityFramework.xml
 C:\AppServ\www\buildthedot\EIF\buildthedot-eis\EIS\EISClient\obj\Debug\EISClient.csprojResolveAssemblyReference.cache
 C:\AppServ\www\buildthedot\EIF\buildthedot-eis\EIS\EISClient\obj\Debug\EISClient.dll
