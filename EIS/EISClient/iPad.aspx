@@ -27,7 +27,7 @@
 </head>
 <body>
     <div id="container" style="height:100%; position:relative;">
-      <div id="titleBar" style="margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; position:absolute; left:0px; top:0px; z-index:5; width:1024px; height:  139px;"></div>
+      <div id="titleBar" style="margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; position:absolute; left:0px; top:0px; z-index:5; width:1024px; height:  138px;"></div>
         <div id="footer" style="height:51px; position:absolute; bottom:0px; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; z-index: 5;">
             <img src="Images/iPad/footer.png" width="1024" height="51" />
         </div>
@@ -38,11 +38,11 @@
             </div>
         </div>
         <div id="loginPasswordPanel" style="display:none; top: 50px; left:0px; width:320px; height:370px; position: absolute;">
-            <div class="semiTransparentBox" style="position: absolute; top: 240px; left: 225px; width: 574px; height: 207px;">
-                <div id="loginPasswordMessage" style="position:absolute; top:20px; width:100%; text-align:center; font-size: 18px;">กรุณาใส่รหัสผ่านเพื่อเข้าระบบครั้งแรก</div>
+            <div class="semiTransparentBox" style="position: absolute; top: 240px; left: 227px; width: 573px; height: 210px;">
+                <div id="loginPasswordMessage" style="position:absolute; top:40px; width:100%; text-align:center; font-size: 27.5px;">กรุณาใส่รหัสผ่านเพื่อเข้าระบบครั้งแรก</div>
                 <div style="position:absolute; top:50px; width:100%; text-align:center;">
-                    <input id="passwordInput" type="password" style="width:190px; position: absolute; top: 0px; left: 25px; height: 22px; font-size: 14px;"/>
-                    <div id="okButton" class="okButton" style="width:64px; height: 58px; position: absolute; top: 0px; left: 235px;"></div>
+                    <input id="passwordInput" type="password" style="width:395px; position: absolute; top: 45px; left: 57px; height: 45px; font-size: 27.5px;"/>
+                    <div id="okButton" class="okButton" style="width:64px; height: 70px; position: absolute; top: 40px; left: 465px;"></div>
                 </div>
             </div>
         </div>

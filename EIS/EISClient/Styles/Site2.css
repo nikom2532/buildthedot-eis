@@ -38,18 +38,18 @@
 
 .okButton 
 {
-    background: url(../Images/iPad/buttonOK.png);
+    background: url(../Images/iPad/buttonOK@2x.png);
     background-repeat: no-repeat;
-    background-size: 64px 58px;
+    background-size: 130px 62px;
     background-position: 0px 0px;
 }
 
 .okButtonSelected
 {
-    background: url(../Images/buttonOK@2x.png);
+    background: url(../Images/iPad/buttonOK@2x.png);
     background-repeat: no-repeat;
-    background-size: 66px 31px;
-    background-position: -33px 0px;
+    background-size: 130px 62px;
+    background-position: -63px 0px;
 }
 
 #patternPanel
