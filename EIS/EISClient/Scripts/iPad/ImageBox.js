@@ -3,18 +3,18 @@
     var _this = this;
     var _element = $("#"+elementId);
     var _imgElement = null;
-    var _currentImgHeight = 434; 
+    var _currentImgHeight = 412; 
 
     this.Initialize = function () {
-        _element.width(320).height(290);
-        _imgElement = $("<img width='823' height='434' style='display:none; position:absolute; top: 20px;' class='imageBox'/>");
+        _element.width(680).height(412);
+        _imgElement = $("<img width='680px' height='412px' style='display:none; position:absolute; top: 20px;' class='imageBox'/>");
         _element.append(_imgElement);
         _imgElement.on("load", onImageLoaded.bind(this));
         _imgElement.draggable({ axis: "y", stop: onImageDragStop.bind(this) });
     }
 
     this.LoadImage = function (url, draggable, height) {
-        var imgHeight = 434;
+        var imgHeight = 412;
         if (height) {
             imgHeight = imgHeight * height;
         }
