@@ -10,8 +10,8 @@
         $("#patternPanel").patternInput({
             verticalDots: 3,
             horizontalDots: 3,
-            width: 450,//iphone 250
-            height: 450,//iphone 250
+            width: 250,
+            height: 250,
             autoClear: true,
             onFinish: onPatternFinish
         });

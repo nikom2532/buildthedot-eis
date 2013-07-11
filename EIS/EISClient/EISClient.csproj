@@ -190,6 +190,11 @@
     <Content Include="Scripts\iPad\ContentPanel.js" />
     <Content Include="Scripts\iPad\ContentRouting.js" />
     <Content Include="Scripts\iPad\ImageBox.js" />
+    <Content Include="Scripts\iPad\Libs\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\iPad\Libs\jquery-ui-1.10.2.custom.min.js" />
+    <Content Include="Scripts\iPad\Libs\jquery.ui.touch-punch.min.js" />
+    <Content Include="Scripts\iPad\Libs\pattern-input.min.js" />
+    <Content Include="Scripts\iPad\Libs\Sha1.js" />
     <Content Include="Scripts\iPad\LoadingPanel.js" />
     <Content Include="Scripts\iPad\Menu.js" />
     <Content Include="Scripts\iPad\MenuBar.js" />
