@@ -107,35 +107,37 @@
 
 .buttonBack 
 {
-    width:120px;
-    height:74px;
+    width:123px;
+    height:89px;
     background: url(../Images/iPad/buttonBack@2x.png);
     background-repeat: no-repeat;
-    background-size: 242px 74px;    
+    background-size: 256px 89px;    
+    background-position: 2px -5px;
    /* background-color: #00024f;*/
     float:left;
 }
 
 .buttonBackSelected
 {
-    background-position: -120px 0px;
+    background-position: -130px -5px;
 }
 
 .buttonHome 
 {
-    width:120px;
-    height:74px;
+    width:123px;
+    height:89px;
     margin-left:39px;
     background: url(../Images/iPad/buttonHome@2x.png);
     background-repeat: no-repeat;
-    background-size: 242px 74px;
+    background-size: 256px 89px;
+    background-position: 7px -5px;
     /*background-color: #000000;*/
     float:left;
 }
 
 .buttonHomeSelected 
 {
-    background-position: -120px 0px;
+    background-position: -127px -5px;
 }
 
 .buttonLogout
@@ -186,25 +188,26 @@
     font-family: menu_font;
     color: White;
     font-size: 25px;
-    height: 40px;
+    height: 28px;
     width: 750px;
     line-height: 40px;
     border-bottom: 1px solid white;
     background: url(../Images/iPad/menuBullet.png);
     background-repeat: no-repeat;
-    background-size: 22px 40px;
+    background-size: 22px 28px;
     background-position: 13px 5px;
     padding-top:5px;
     padding-left:50px;
+    padding-bottom:8px;
     cursor: pointer;
 }
 
 .menuItemSelected
 {
-    background: url(../Images/menuBulletSelected@2x.png);
+    background: url(../Images/iPad/menuBulletSelected@2x.png);
     background-repeat: no-repeat;
-    background-size: 26px 26px;
-    background-position: 4px 3px;
+    background-size: 38px 37px;
+    background-position: 3px 1px;
     color: #ff9000;
 }
 

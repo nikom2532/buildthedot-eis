@@ -80,7 +80,6 @@ E:\EIS\buildthedot-eis\EIS\EISClient\bin\EISClient.pdb
 E:\EIS\buildthedot-eis\EIS\EISClient\bin\EntityFramework.dll
 E:\EIS\buildthedot-eis\EIS\EISClient\bin\MySql.Data.dll
 E:\EIS\buildthedot-eis\EIS\EISClient\bin\MySql.Data.Entity.dll
-E:\EIS\buildthedot-eis\EIS\EISClient\bin\MySql.Web.dll
 E:\EIS\buildthedot-eis\EIS\EISClient\bin\EntityFramework.xml
 E:\EIS\buildthedot-eis\EIS\EISClient\obj\Debug\ResolveAssemblyReference.cache
 E:\EIS\buildthedot-eis\EIS\EISClient\obj\Debug\EISClient.dll

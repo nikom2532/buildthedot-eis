@@ -132,7 +132,7 @@
     this.Show = function (callback) {
         //move in
         $("#contentPanel").animate({
-            left: 50 // iphone 0
+            left: 80 // iphone 0
         }, 500);
         $("#bottomBar").animate({
             top: 670//410

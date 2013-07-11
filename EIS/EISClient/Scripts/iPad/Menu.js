@@ -16,15 +16,15 @@
     this.Show = function (callback) {
         _element.show();
         _element.animate({
-            top: 92
+            left: 0
         }, 500, callback);
     }
 
     this.Hide = function (callback) {
         _element.animate({
-            top: -238
+            left: -880
         }, 300, function () {
-            _element.hide();
+            //_element.hide();
             if (callback) {
                 callback();
             }

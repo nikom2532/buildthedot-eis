@@ -61,7 +61,7 @@
                 <div class="buttonHome"></div>
                 <div class="buttonLogout"></div>
             </div>
-            <div id="menuPanel" style="position:absolute; left:0px; top:500px; width:880px; height:500px; z-index:3; display:none;" class="menuPanel">
+            <div id="menuPanel" style="position:absolute; left:0px; top:90px; width:880px; height:500px; z-index:3; display:none;" class="menuPanel">
                 <div id="menuTab" style="position:absolute;left:880px; top:130px;"></div>
                 <div class="menuGroup">
                     <span style="padding-left:39px;">อัตรากำลัง</span>
@@ -96,7 +96,7 @@
                 </div>
               
             </div>
-            <div id="contentPanel" style="position:absolute; left:1024px; top:173px; width:928px; height: 370px; z-index:2;">
+            <div id="contentPanel" style="position:absolute; left:1024px; top:173px; width:928px; height: 500px; z-index:2;">
                 <div id="titleLabel" style="position:absolute; left:0px; top:0px; width:905px; height:35px; z-index:2;" class="titleLabel">อัตรากำลัง</div>
                 <div style="position:absolute; top:31px; width:928px">
                     <div id="yearLabel" style="position:absolute; right:0px; top:20px; width:225px; height: 40px; z-index:2;" class="yearLabel">ปีงบประมาณ <span id="yearText"></span></div>
@@ -104,6 +104,7 @@
                     <div id="imageBox2" style="position:absolute; top:0px; left:0px;  width: 320px; height: 290px; z-index:1; background-color:White;"></div>                
                 </div>
             </div>
+        
            <div id="bottomBar" style="position:absolute; left:0; top:670px; width:1024px; height:50px; z-index:5; margin-left: auto; margin-right: auto; display: table-cell; text-align: center;">
                 <div id="bottomBarInner" style="width:100%; height:100%;"></div>
       
