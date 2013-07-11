@@ -132,17 +132,17 @@
     this.Show = function (callback) {
         //move in
         $("#contentPanel").animate({
-            left: 50 // iphone 0
+            left: 0
         }, 500);
         $("#bottomBar").animate({
-            top: 670//410
+            top: 410
         }, 500, callback);
     }
 
     this.Hide = function (callback) {
         //move out
         $("#contentPanel").animate({
-            left: 1024//iphone 320
+            left: 320
         }, 500);
         $("#bottomBar").animate({
             top: 460
