@@ -96,7 +96,7 @@
                     _buttons[button].SetFontSize(_currentContent.buttons[button].fontSize);
                     sumWidth += _buttons[button].GetWidth();
                 }
-                var padding = (320 - sumWidth) / 2;
+                var padding = (1024 - sumWidth) / 2;
                 $("#bottomBarInner").css("padding-left", padding+"px");
 
                 loadImage(_currentContent.imageUrl, _currentContent.draggable, _currentContent.height);

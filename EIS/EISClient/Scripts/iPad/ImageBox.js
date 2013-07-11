@@ -3,18 +3,18 @@
     var _this = this;
     var _element = $("#"+elementId);
     var _imgElement = null;
-    var _currentImgHeight = 290; 
+    var _currentImgHeight = 434; 
 
     this.Initialize = function () {
         _element.width(320).height(290);
-        _imgElement = $("<img width='320' height='290' style='display:none; position:absolute; top: 0px;' class='imageBox'/>");
+        _imgElement = $("<img width='823' height='434' style='display:none; position:absolute; top: 20px;' class='imageBox'/>");
         _element.append(_imgElement);
         _imgElement.on("load", onImageLoaded.bind(this));
         _imgElement.draggable({ axis: "y", stop: onImageDragStop.bind(this) });
     }
 
     this.LoadImage = function (url, draggable, height) {
-        var imgHeight = 290;
+        var imgHeight = 434;
         if (height) {
             imgHeight = imgHeight * height;
         }
@@ -49,8 +49,8 @@
                 top: 0
             }, 200);
         } else
-        if (_imgElement.position().top + _imgElement.height() < 290) {
-            var expectedTop = -1 * (_imgElement.height() - 290);
+        if (_imgElement.position().top + _imgElement.height() < 434) {
+            var expectedTop = -1 * (_imgElement.height() - 434);
             _imgElement.animate({
                 top: expectedTop
             }, 200);

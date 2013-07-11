@@ -97,11 +97,11 @@
               
             </div>
             <div id="contentPanel" style="position:absolute; left:1024px; top:173px; width:928px; height: 500px; z-index:2;">
-                <div id="titleLabel" style="position:absolute; left:0px; top:0px; width:905px; height:35px; z-index:2;" class="titleLabel">อัตรากำลัง</div>
-                <div style="position:absolute; top:31px; width:928px">
+                <div id="titleLabel" style="position:absolute; left:0px; top:0px; width:883px; height:40px; z-index:2;" class="titleLabel">อัตรากำลัง</div>
+                <div style="position:absolute; top:40px; width:928px">
                     <div id="yearLabel" style="position:absolute; right:0px; top:20px; width:225px; height: 40px; z-index:2;" class="yearLabel">ปีงบประมาณ <span id="yearText"></span></div>
-                    <div id="imageBox" style="position:absolute; top:0px; left:0px; width: 320px; height: 290px; z-index:1; background-color:White;"></div>
-                    <div id="imageBox2" style="position:absolute; top:0px; left:0px;  width: 320px; height: 290px; z-index:1; background-color:White;"></div>                
+                    <div id="imageBox" style="position:absolute; top:0px; left:0px; width: 823px; height: 434px; z-index:1; background-color:White;"></div>
+                    <div id="imageBox2" style="position:absolute; top:0px; left:0px;  width: 823px; height: 434px; z-index:1; background-color:White;"></div>                
                 </div>
             </div>
         
