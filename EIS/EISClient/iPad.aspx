@@ -13,17 +13,17 @@
     <script src="Scripts/Libs/jquery-ui-1.10.2.custom.min.js" type="text/javascript"></script>
     <script src="Scripts/Libs/jquery.ui.touch-punch.min.js" type="text/javascript"></script>
     <script src="Scripts/Libs/pattern-input.min.js" type="text/javascript"></script>
-    <script src="Scripts/Service.js" type="text/javascript"></script>
-    <script src="Scripts/ContentRouting.js" type="text/javascript"></script>
-    <script src="Scripts/LoadingPanel.js" type="text/javascript"></script>
-    <script src="Scripts/PasswordLoginPanel.js" type="text/javascript"></script>
-    <script src="Scripts/PatternLoginPanel.js" type="text/javascript"></script>
-    <script src="Scripts/Menu.js" type="text/javascript"></script>
-    <script src="Scripts/MenuBar.js" type="text/javascript"></script>
-    <script src="Scripts/ImageBox.js" type="text/javascript"></script>
-    <script src="Scripts/Button.js" type="text/javascript"></script>
-    <script src="Scripts/ContentPanel.js" type="text/javascript"></script>
-    <script src="Scripts/PageScript.js" type="text/javascript"></script>
+    <script src="Scripts/iPad/Service.js" type="text/javascript"></script>
+    <script src="Scripts/iPad/ContentRouting.js" type="text/javascript"></script>
+    <script src="Scripts/iPad/LoadingPanel.js" type="text/javascript"></script>
+    <script src="Scripts/iPad/PasswordLoginPanel.js" type="text/javascript"></script>
+    <script src="Scripts/iPad/PatternLoginPanel.js" type="text/javascript"></script>
+    <script src="Scripts/iPad/Menu.js" type="text/javascript"></script>
+    <script src="Scripts/iPad/MenuBar.js" type="text/javascript"></script>
+    <script src="Scripts/iPad/ImageBox.js" type="text/javascript"></script>
+    <script src="Scripts/iPad/Button.js" type="text/javascript"></script>
+    <script src="Scripts/iPad/ContentPanel.js" type="text/javascript"></script>
+    <script src="Scripts/iPad/PageScript.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="container" style="height:100%; position:relative;">
