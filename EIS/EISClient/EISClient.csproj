@@ -130,6 +130,7 @@
     <Content Include="Images\iPad\menuBackground.png" />
     <Content Include="Images\iPad\menuBullet.png" />
     <Content Include="Images\iPad\menuBulletSelected.png" />
+    <Content Include="Images\iPad\menuTab.png" />
     <Content Include="Images\iPad\title.png" />
     <Content Include="Images\menuBackground%402x.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

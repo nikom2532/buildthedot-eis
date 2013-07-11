@@ -62,6 +62,7 @@
                 <div class="buttonLogout"></div>
             </div>
             <div id="menuPanel" style="position:absolute; left:0px; top:500px; width:880px; height:500px; z-index:3; display:none;" class="menuPanel">
+                <div id="menuTab" style="position:absolute;left:880px; top:130px;"></div>
                 <div class="menuGroup">
                     <span style="padding-left:39px;">อัตรากำลัง</span>
                 </div>
@@ -93,10 +94,10 @@
                 <div class="menuItem" rel="firstCarStatus" style="margin-left:25px;border-bottom: 0px solid white;">
                     รถคันแรก
                 </div>
-                <!-- <div id="menuTab" style="position:absolute;"> -->
+              
             </div>
-            <div id="contentPanel" style="position:absolute; left:1024px; top:173px; width:1024px; height: 370px; z-index:2;">
-                <div id="titleLabel" style="position:absolute; left:0px; top:0px; width:910px; height:35px; z-index:2;" class="titleLabel">อัตรากำลัง</div>
+            <div id="contentPanel" style="position:absolute; left:1024px; top:173px; width:928px; height: 370px; z-index:2;">
+                <div id="titleLabel" style="position:absolute; left:0px; top:0px; width:905px; height:35px; z-index:2;" class="titleLabel">อัตรากำลัง</div>
                 <div style="position:absolute; top:31px; width:928px">
                     <div id="yearLabel" style="position:absolute; right:0px; top:20px; width:225px; height: 40px; z-index:2;" class="yearLabel">ปีงบประมาณ <span id="yearText"></span></div>
                     <div id="imageBox" style="position:absolute; top:0px; left:0px; width: 320px; height: 290px; z-index:1; background-color:White;"></div>
