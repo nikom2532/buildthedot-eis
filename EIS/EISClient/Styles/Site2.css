@@ -73,17 +73,18 @@
     font-family: menu_font;
     color: #00014d;
     padding-left: 23px;
-    font-size: 21px;
+    font-size: 30px;
 }
 
 #yearLabel 
 {
     background-color: #00024f !important;
-    line-height:23px;
+    line-height:25px;
     font-family: menu_font;
     color: White;
-    font-size: 16px;
+    font-size: 25px;
     text-align: center;
+    padding-top:13px;
 }
 
 #bottomBar 
@@ -106,28 +107,29 @@
 
 .buttonBack 
 {
-    width:100px;
-    height:42px;
-    background: url(../Images/buttonBack@2x.png);
+    width:120px;
+    height:74px;
+    background: url(../Images/iPad/buttonBack@2x.png);
     background-repeat: no-repeat;
-    background-size: 200px 42px;    
-    background-color: #000000;
+    background-size: 242px 74px;    
+   /* background-color: #00024f;*/
     float:left;
 }
 
 .buttonBackSelected
 {
-    background-position: -100px 0px;
+    background-position: -120px 0px;
 }
 
 .buttonHome 
 {
     width:120px;
-    height:42px;
-    background: url(../Images/buttonHome@2x.png);
+    height:74px;
+    margin-left:39px;
+    background: url(../Images/iPad/buttonHome@2x.png);
     background-repeat: no-repeat;
-    background-size: 240px 42px;
-    background-color: #000000;
+    background-size: 242px 74px;
+    /*background-color: #000000;*/
     float:left;
 }
 
@@ -138,33 +140,40 @@
 
 .buttonLogout
 {
-    width:100px;
-    height:42px;
-    background: url(../Images/buttonLogout@2x.png);
+    width:120px;
+    height:74px;
+    margin-left:39px;
+    background: url(../Images/iPad/buttonLogout@2x.png);
     background-repeat: no-repeat;
-    background-size: 200px 42px;
-    background-color: #000000;
+    background-size: 242px 74px;
+    /*background-color: #000000;*/
     float:left;
 }
 
 .buttonLogoutSelected
 {
-    background-position: -100px 0px;
+    background-position: -120px 0px;
 }
 
 .menuPanel 
 {
+    margin-top:80px;
     background-color:rgba(0,0,0,0.5);
+}
+#menuTab
+{
+    
+    
 }
 
 .menuGroup 
 {
     font-family: menu_font;
     color: White;
-    font-size: 21px;
-    height: 28px;
-    width: 320px;
-    line-height: 32px;
+    font-size: 30px;
+    height: 35px;
+    width: 880px;
+    line-height: 35px;
     background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #6B6B6B), color-stop(1, #282828));
 }
 
@@ -172,16 +181,17 @@
 {
     font-family: menu_font;
     color: White;
-    font-size: 20px;
-    height: 32px;
-    width: 285px;
-    line-height: 36px;
+    font-size: 25px;
+    height: 40px;
+    width: 750px;
+    line-height: 40px;
     border-bottom: 1px solid white;
-    background: url(../Images/menuBullet@2x.png);
+    background: url(../Images/iPad/menuBullet.png);
     background-repeat: no-repeat;
-    background-size: 16px 24px;
-    background-position: 10px 4px;
-    padding-left:35px;
+    background-size: 22px 40px;
+    background-position: 13px 5px;
+    padding-top:5px;
+    padding-left:50px;
     cursor: pointer;
 }
 

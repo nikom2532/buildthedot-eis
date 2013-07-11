@@ -27,7 +27,7 @@
 </head>
 <body>
     <div id="container" style="height:100%; position:relative;">
-        <div id="titleBar" style="margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; position:absolute; left:0px; top:0px; z-index:5; width:320px; height: 50px;"></div>
+       <div id="titleBar" style="margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; position:absolute; left:0px; top:0px; z-index:5; width:320px; height: 50px;"></div>
         <div id="footer" style="height:40px; position:absolute; bottom:0px; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; z-index: 5;">
             <img src="Images/footer@2x.png" width="320" height="40" />
         </div>

@@ -119,12 +119,12 @@
     <Content Include="Images\headerBullet.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\iPad\buttonBack.png" />
+    <Content Include="Images\iPad\buttonBack%402x.png" />
     <Content Include="Images\iPad\buttonBackground.png" />
     <Content Include="Images\iPad\buttonCompare.png" />
     <Content Include="Images\iPad\buttonDetail.png" />
-    <Content Include="Images\iPad\buttonHome.png" />
-    <Content Include="Images\iPad\buttonLogout.png" />
+    <Content Include="Images\iPad\buttonHome%402x.png" />
+    <Content Include="Images\iPad\buttonLogout%402x.png" />
     <Content Include="Images\iPad\buttonOK%402x.png" />
     <Content Include="Images\iPad\buttonOk.png" />
     <Content Include="Images\iPad\footer.png" />
@@ -205,6 +205,7 @@
     <Content Include="Global.asax" />
     <Content Include="Styles\Site2.css" />
     <Content Include="Styles\StyeIpad.css" />
+    <Content Include="Styles\pattern-input-ipad.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

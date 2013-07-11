@@ -7,7 +7,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
     <link href="Styles/Site2.css?v=3" rel="stylesheet" type="text/css" />
-    <link href="Styles/pattern-input.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/pattern-input-ipad.css" rel="stylesheet" type="text/css" />
     <script src="Scripts/Libs/Sha1.js" type="text/javascript"></script>
     <script src="Scripts/Libs/jquery-1.9.1.min.js" type="text/javascript"></script>
     <script src="Scripts/Libs/jquery-ui-1.10.2.custom.min.js" type="text/javascript"></script>
@@ -27,7 +27,7 @@
 </head>
 <body>
     <div id="container" style="height:100%; position:relative;">
-      <div id="titleBar" style="margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; position:absolute; left:0px; top:0px; z-index:5; width:1024px; height:  138px;"></div>
+     <div id="titleBar" style="margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; position:absolute; left:0px; top:0px; z-index:5; width:1024px; height:  138px;"></div>
         <div id="footer" style="height:51px; position:absolute; bottom:0px; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; z-index: 5;">
             <img src="Images/iPad/footer.png" width="1024" height="51" />
         </div>
@@ -50,60 +50,62 @@
             <div id="patternMessageBox" class="semiTransparentBox" style="display:none; position: absolute; top: 65px; left: 32px; width: 250px; height: 30px;">
                 <div id="patternMessage" style="position:absolute; top:3px; width:100%; text-align:center; font-size: 18px;">รหัสผ่านไม่ถูกต้อง กรุณาลองอีกครั้ง</div>
             </div>
-            <div id="patternPanel" style="position: absolute; top: 110px; left: 32px;"></div>
-            <div id="patternForget" style="display:none; position: absolute; top: 370px; left: 32px; width: 250px; height: 30px;">
+            <div id="patternPanel" style="position: absolute; top: 170px; left: 254px;"></div>
+            <div id="patternForget" style="display:none; position: absolute; top: 645px; left: 355px; width: 250px; height: 30px;">
                 <div style="position:absolute; top:3px; width:100%; text-align:center; font-size: 18px; text-decoration: underline;">ลืมรหัสผ่าน?</div>
             </div>
         </div>
-        <div id="mainPanel" style="display:none; width:320px; height:460px; overflow:hidden; ">
-            <div id="menuBar" style="margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; position:absolute; left:0px; top:8px; z-index: 4;">
+        <div id="mainPanel" style="display:none; width:1024px; height:320px; overflow:hidden; ">
+            <div id="menuBar" style="margin: -20px 0px 0px 0px; padding: 0px 0px 0px 0px; position:absolute; left:547px; top:0px; z-index: 6;">
                 <div class="buttonBack"></div>
                 <div class="buttonHome"></div>
                 <div class="buttonLogout"></div>
             </div>
-            <div id="menuPanel" style="position:absolute; left:0px; top:-238px; width:320; height:326px; z-index:3; display:none;" class="menuPanel">
+            <div id="menuPanel" style="position:absolute; left:0px; top:500px; width:880px; height:500px; z-index:3; display:none;" class="menuPanel">
+            <div id="menuTab"></div><!-- -->
                 <div class="menuGroup">
-                    <span style="padding-left:5px;">อัตรากำลัง</span>
+                    <span style="padding-left:39px;">อัตรากำลัง</span>
                 </div>
-                <div class="menuItem" rel="numberOfEmployee">
+                <div class="menuItem" rel="numberOfEmployee" style="margin-top:8px; margin-left:25px;">
                     อัตรากำลัง
                 </div>
-                <div class="menuItem" rel="estimatedRetirement">
+                <div class="menuItem" rel="estimatedRetirement" style="margin-left:25px;">
                     ประมาณการอัตรากำลังเกษียณ
                 </div>
-                <div class="menuItem" rel="estimatedFundMember">
+                <div class="menuItem" rel="estimatedFundMember" style="margin-left:25px; border-bottom: 0px solid white;">
                     จำนวนสมาชิก กบข./กสจ.
                 </div>
                 <div style="height:10px;"></div>
-                <div class="menuGroup">
-                    <span style="padding-left:5px;">การเบิกจ่าย</span>
+                <div class="menuGroup" >
+                    <span style="padding-left:39px;">การเบิกจ่าย</span>
                 </div>
-                <div class="menuItem" rel="budgetUsage">
+                <div class="menuItem" rel="budgetUsage" style="margin-top:8px; margin-left:25px;">
                     การเบิกจ่ายเงินงบประมาณภาพรวม
                 </div>
-                <div class="menuItem" rel="employeeRelatedBudgetUsage">
+                <div class="menuItem" rel="employeeRelatedBudgetUsage" style="margin-left:25px;">
                     การเบิกจ่ายงบบุคลากร
                 </div>
-                <div class="menuItem" rel="retirementFundUsage">
+                <div class="menuItem" rel="retirementFundUsage" style="margin-left:25px;">
                     บำเหน็จบำนาญ
                 </div>
-                <div class="menuItem" rel="warrantFundProviding">
+                <div class="menuItem" rel="warrantFundProviding" style="margin-left:25px;">
                     บำเหน็จค้ำประกัน
                 </div>
-                <div class="menuItem" rel="firstCarStatus">
+                <div class="menuItem" rel="firstCarStatus" style="margin-left:25px;border-bottom: 0px solid white;">
                     รถคันแรก
                 </div>
             </div>
-            <div id="contentPanel" style="position:absolute; left:320px; top:90px; width:320px; height: 370px; z-index:2;">
-                <div id="titleLabel" style="position:absolute; left:0px; top:0px; width:297px; height:31px; z-index:2;" class="titleLabel">อัตรากำลัง</div>
-                <div style="position:absolute; top:31px; width:320px">
-                    <div id="yearLabel" style="position:absolute; right:0px; top:9px; width:130px; height: 20px; z-index:2;" class="yearLabel">ปีงบประมาณ <span id="yearText"></span></div>
+            <div id="contentPanel" style="position:absolute; left:1024px; top:173px; width:1024px; height: 370px; z-index:2;">
+                <div id="titleLabel" style="position:absolute; left:0px; top:0px; width:910px; height:35px; z-index:2;" class="titleLabel">อัตรากำลัง</div>
+                <div style="position:absolute; top:31px; width:928px">
+                    <div id="yearLabel" style="position:absolute; right:0px; top:20px; width:225px; height: 40px; z-index:2;" class="yearLabel">ปีงบประมาณ <span id="yearText"></span></div>
                     <div id="imageBox" style="position:absolute; top:0px; left:0px; width: 320px; height: 290px; z-index:1; background-color:White;"></div>
                     <div id="imageBox2" style="position:absolute; top:0px; left:0px;  width: 320px; height: 290px; z-index:1; background-color:White;"></div>                
                 </div>
             </div>
-            <div id="bottomBar" style="position:absolute; left:0; top:460px; width:320px; height:50px; z-index:5; margin-left: auto; margin-right: auto; display: table-cell; text-align: center;">
+            <!-- <div id="bottomBar" style="position:absolute; left:0; top:670px; width:1024px; height:50px; z-index:5; margin-left: auto; margin-right: auto; display: table-cell; text-align: center;">
                 <div id="bottomBarInner" style="width:100%; height:100%;"></div>
+            -->
             </div>
         </div>
 
