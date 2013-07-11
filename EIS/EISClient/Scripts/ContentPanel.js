@@ -135,7 +135,7 @@
             left: 0
         }, 500);
         $("#bottomBar").animate({
-            top: 410
+            top: 670//410
         }, 500, callback);
     }
 

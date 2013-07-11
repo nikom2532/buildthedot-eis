@@ -162,8 +162,12 @@
 }
 #menuTab
 {
-    
-    
+    height: 66px;
+    width: 282px;
+    background: url(../Images/iPad/menuTab.png);
+    background-repeat: no-repeat;
+    background-size: 66px 282px;
+    background-position: 13px 5px;
 }
 
 .menuGroup 
@@ -172,7 +176,7 @@
     color: White;
     font-size: 30px;
     height: 35px;
-    width: 880px;
+    width: 880px;/*880*/
     line-height: 35px;
     background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #6B6B6B), color-stop(1, #282828));
 }

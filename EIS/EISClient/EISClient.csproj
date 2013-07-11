@@ -126,7 +126,6 @@
     <Content Include="Images\iPad\buttonHome%402x.png" />
     <Content Include="Images\iPad\buttonLogout%402x.png" />
     <Content Include="Images\iPad\buttonOK%402x.png" />
-    <Content Include="Images\iPad\buttonOk.png" />
     <Content Include="Images\iPad\footer.png" />
     <Content Include="Images\iPad\menuBackground.png" />
     <Content Include="Images\iPad\menuBullet.png" />

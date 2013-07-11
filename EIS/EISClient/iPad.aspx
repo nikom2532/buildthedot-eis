@@ -1,7 +1,7 @@
 ﻿
 <!DOCTYPE html>
 <html>
-<head runat="server">
+<head id="Head1" runat="server">
     <title>CGD Mobility</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
@@ -55,14 +55,13 @@
                 <div style="position:absolute; top:3px; width:100%; text-align:center; font-size: 18px; text-decoration: underline;">ลืมรหัสผ่าน?</div>
             </div>
         </div>
-        <div id="mainPanel" style="display:none; width:1024px; height:320px; overflow:hidden; ">
+        <div id="mainPanel" style="display:none; width:880px; height:320px; overflow:hidden; ">
             <div id="menuBar" style="margin: -20px 0px 0px 0px; padding: 0px 0px 0px 0px; position:absolute; left:547px; top:0px; z-index: 6;">
                 <div class="buttonBack"></div>
                 <div class="buttonHome"></div>
                 <div class="buttonLogout"></div>
             </div>
             <div id="menuPanel" style="position:absolute; left:0px; top:500px; width:880px; height:500px; z-index:3; display:none;" class="menuPanel">
-            <div id="menuTab"></div><!-- -->
                 <div class="menuGroup">
                     <span style="padding-left:39px;">อัตรากำลัง</span>
                 </div>
@@ -94,6 +93,7 @@
                 <div class="menuItem" rel="firstCarStatus" style="margin-left:25px;border-bottom: 0px solid white;">
                     รถคันแรก
                 </div>
+                <!-- <div id="menuTab" style="position:absolute;"> -->
             </div>
             <div id="contentPanel" style="position:absolute; left:1024px; top:173px; width:1024px; height: 370px; z-index:2;">
                 <div id="titleLabel" style="position:absolute; left:0px; top:0px; width:910px; height:35px; z-index:2;" class="titleLabel">อัตรากำลัง</div>
@@ -103,10 +103,11 @@
                     <div id="imageBox2" style="position:absolute; top:0px; left:0px;  width: 320px; height: 290px; z-index:1; background-color:White;"></div>                
                 </div>
             </div>
-            <!-- <div id="bottomBar" style="position:absolute; left:0; top:670px; width:1024px; height:50px; z-index:5; margin-left: auto; margin-right: auto; display: table-cell; text-align: center;">
+           <div id="bottomBar" style="position:absolute; left:0; top:670px; width:1024px; height:50px; z-index:5; margin-left: auto; margin-right: auto; display: table-cell; text-align: center;">
                 <div id="bottomBarInner" style="width:100%; height:100%;"></div>
-            -->
+      
             </div>
+           
         </div>
 
     </div>
