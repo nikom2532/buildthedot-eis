@@ -8,11 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
     <link href="Styles/Site2.css?v=3" rel="stylesheet" type="text/css" />
     <link href="Styles/pattern-input-ipad.css" rel="stylesheet" type="text/css" />
-    <script src="Scripts/Libs/Sha1.js" type="text/javascript"></script>
-    <script src="Scripts/Libs/jquery-1.9.1.min.js" type="text/javascript"></script>
-    <script src="Scripts/Libs/jquery-ui-1.10.2.custom.min.js" type="text/javascript"></script>
-    <script src="Scripts/Libs/jquery.ui.touch-punch.min.js" type="text/javascript"></script>
-    <script src="Scripts/Libs/pattern-input.min.js" type="text/javascript"></script>
+    <script src="Scripts/iPad/Libs/Sha1.js" type="text/javascript"></script>
+    <script src="Scripts/iPad/Libs/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="Scripts/iPad/Libs/jquery-ui-1.10.2.custom.min.js" type="text/javascript"></script>
+    <script src="Scripts/iPad/Libs/jquery.ui.touch-punch.min.js" type="text/javascript"></script>
+    <script src="Scripts/iPad/Libs/pattern-input.min.js" type="text/javascript"></script>
     <script src="Scripts/iPad/Service.js" type="text/javascript"></script>
     <script src="Scripts/iPad/ContentRouting.js" type="text/javascript"></script>
     <script src="Scripts/iPad/LoadingPanel.js" type="text/javascript"></script>
