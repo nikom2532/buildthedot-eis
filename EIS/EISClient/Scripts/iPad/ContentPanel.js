@@ -51,6 +51,8 @@
         _imgBox2.Initialize();
         _currentImgBox = _imgBox2;
         _theOtherImgBox = _imgBox1;
+/*
+<<<<<<< HEAD
         _buttons["detail"] = new Button("detail", "bottomBarInner", 159, 0, 121, 134, "buttonDetail");
         _buttons["compare"] = new Button("compare", "bottomBarInner", 30, 0, 121, 134, "buttonCompare");
         _buttons["compareonly"] = new Button("compareonly", "bottomBarInner", 94, 0, 131, 50, "buttonCompare");
@@ -58,6 +60,24 @@
         _buttons["two"] = new Button("two", "bottomBarInner", 81, 0, 77, 50, "buttonEmpty", "2");
         _buttons["three"] = new Button("three", "bottomBarInner", 160, 0, 77, 50, "buttonEmpty", "3");
         _buttons["four"] = new Button("four", "bottomBarInner", 239, 0, 77, 50, "buttonEmpty", "4");
+=======
+        _buttons["detail"] = new Button("detail", "bottomBarInner", 300, -40, 109, 130, "buttonDetail");
+        _buttons["compare"] = new Button("compare", "bottomBarInner", 300, 70, 109, 130, "buttonCompare");
+        _buttons["compareonly"] = new Button("compareonly", "bottomBarInner", 300, -40, 109, 130, "buttonCompare");
+        _buttons["one"] = new Button("one", "bottomBarInner", 300, -50, 143, 130, "buttonEmpty", "1");
+        _buttons["two"] = new Button("two", "bottomBarInner", 300, 50, 143, 130, "buttonEmpty", "2");
+        _buttons["three"] = new Button("three", "bottomBarInner", 300, 150, 143, 120, "buttonEmpty", "3");
+        _buttons["four"] = new Button("four", "bottomBarInner", 300, 250, 143, 120, "buttonEmpty", "4");
+>>>>>>> 92a2e077ed8aca77887911781576ac1705cc6586
+*/
+        _buttons["detail"] = new Button("detail", "bottomBarInner", 300, -40, 109, 130, "buttonDetail");
+        _buttons["compare"] = new Button("compare", "bottomBarInner", 300, 70, 109, 130, "buttonCompare");
+        _buttons["compareonly"] = new Button("compareonly", "bottomBarInner", 300, -40, 109, 130, "buttonCompare");
+        _buttons["one"] = new Button("one", "bottomBarInner", 300, -50, 143, 130, "buttonEmpty", "1");
+        _buttons["two"] = new Button("two", "bottomBarInner", 300, 50, 143, 130, "buttonEmpty", "2");
+        _buttons["three"] = new Button("three", "bottomBarInner", 300, 150, 143, 120, "buttonEmpty", "3");
+        _buttons["four"] = new Button("four", "bottomBarInner", 300, 250, 143, 120, "buttonEmpty", "4");
+
         for (var button in _buttons) {
             _buttons[button].Initialize();
             $(_buttons[button]).on(_buttons[button].Events.Clicked, onButtonClicked);
@@ -96,7 +116,7 @@
                     _buttons[button].SetFontSize(_currentContent.buttons[button].fontSize);
                     sumWidth += _buttons[button].GetWidth();
                 }
-                var padding = (800 - sumWidth) / 2;
+                var padding = (750 - sumWidth) / 2;
                 $("#bottomBarInner").css("padding-left", padding+"px");
 
                 loadImage(_currentContent.imageUrl, _currentContent.draggable, _currentContent.height);
@@ -135,8 +155,8 @@
             left: 80 // iphone 0
         }, 500);
         $("#bottomBar").animate({
-            top: -250,//410
-            left: 500
+            top: -335,//410
+            left: 530
         }, 500, callback);
     }
 
@@ -146,8 +166,9 @@
             left: 1024//iphone 320
         }, 500);
         $("#bottomBar").animate({
-            top: 769,
-            left: 700
+            left: 1200,
+            top:-335
+           
         }, 500, callback);
     }
 }
