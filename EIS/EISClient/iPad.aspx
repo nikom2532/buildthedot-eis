@@ -106,7 +106,7 @@
             </div>
         
             <div id="bottomBar" style="position:absolute; left:0; top:670px; width:1024px; height:50px; z-index:5; margin-left: auto; margin-right: auto; display: table-cell; text-align: center;">
-                <div id="bottomBarInner" style="position:absolute; left:0; top:670px; width:1024px; height:50px; z-index:5; margin-left: auto; margin-right: auto; display: table-cell; text-align: center;" style="width:100%; height:100%;"></div>
+                <div id="bottomBarInner" style="position:absolute; left:0; top:670px; width:1024px; height:50px; z-index:5; margin-left: auto; margin-right: auto; display: block; text-align: center;" style="width:100%; height:100%;"></div>
             </div>
      
         </div>

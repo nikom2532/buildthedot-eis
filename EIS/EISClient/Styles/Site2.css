@@ -216,7 +216,7 @@
 {
     background: url(../Images/iPad/buttonDetail@2x.png);
     background-repeat: no-repeat;
-    background-size: 218px 103px;
+    background-size: 258px 135px;
     
 }
 
@@ -227,9 +227,9 @@
 
 .buttonCompare
 {
-    background: url(../Images/buttonCompare@2x.png);
+    background: url(../Images/iPad/buttonCompare@2x.png);
     background-repeat: no-repeat;
-    background-size: 262px 50px;
+    background-size: 258px 135px;
 }
 
 .buttonCompareSelected

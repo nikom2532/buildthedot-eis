@@ -51,8 +51,8 @@
         _imgBox2.Initialize();
         _currentImgBox = _imgBox2;
         _theOtherImgBox = _imgBox1;
-        _buttons["detail"] = new Button("detail", "bottomBarInner", 159, 0, 131, 50, "buttonDetail");
-        _buttons["compare"] = new Button("compare", "bottomBarInner", 30, 0, 131, 50, "buttonCompare");
+        _buttons["detail"] = new Button("detail", "bottomBarInner", 159, 0, 121, 134, "buttonDetail");
+        _buttons["compare"] = new Button("compare", "bottomBarInner", 30, 0, 121, 134, "buttonCompare");
         _buttons["compareonly"] = new Button("compareonly", "bottomBarInner", 94, 0, 131, 50, "buttonCompare");
         _buttons["one"] = new Button("one", "bottomBarInner", 2, 0, 77, 50, "buttonEmpty", "1");
         _buttons["two"] = new Button("two", "bottomBarInner", 81, 0, 77, 50, "buttonEmpty", "2");
