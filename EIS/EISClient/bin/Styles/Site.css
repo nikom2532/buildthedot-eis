@@ -66,9 +66,9 @@
 {
     background-color: #d8d8d8 !important;
     background: url(../Images/headerBullet@2x.png);
-    background-position: 10px 10px;
+    background-position: 10px 0px;
     background-repeat: no-repeat;
-    background-size: 10px 12px;
+    background-size: 22px 24px;
     line-height:36px;
     font-family: menu_font;
     color: #00014d;

@@ -130,8 +130,10 @@
     <Content Include="Images\iPad\buttonLogout%402x.png" />
     <Content Include="Images\iPad\buttonOK%402x.png" />
     <Content Include="Images\iPad\footer.png" />
+    <Content Include="Images\iPad\headerBullet%402x.png" />
     <Content Include="Images\iPad\menuBackground.png" />
     <Content Include="Images\iPad\menuBullet.png" />
+    <Content Include="Images\iPad\menuBulletSelected%402x.png" />
     <Content Include="Images\iPad\menuBulletSelected.png" />
     <Content Include="Images\iPad\menuTab.png" />
     <Content Include="Images\iPad\title.png" />
