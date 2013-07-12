@@ -38,7 +38,6 @@ C:\AppServ\www\buildthedot\EIF\buildthedot-eis\EIS\EISClient\bin\EntityFramework
 C:\AppServ\www\buildthedot\EIF\buildthedot-eis\EIS\EISClient\bin\MySql.Data.dll
 C:\AppServ\www\buildthedot\EIF\buildthedot-eis\EIS\EISClient\bin\MySql.Data.Entity.dll
 C:\AppServ\www\buildthedot\EIF\buildthedot-eis\EIS\EISClient\bin\EntityFramework.xml
-C:\AppServ\www\buildthedot\EIF\buildthedot-eis\EIS\EISClient\obj\Debug\EISClient.csprojResolveAssemblyReference.cache
 C:\AppServ\www\buildthedot\EIF\buildthedot-eis\EIS\EISClient\obj\Debug\EISClient.dll
 C:\AppServ\www\buildthedot\EIF\buildthedot-eis\EIS\EISClient\obj\Debug\EISClient.pdb
 E:\EIS\buildthedot-eis\EIS\EISClient\bin\Images\buttonBack@2x.png

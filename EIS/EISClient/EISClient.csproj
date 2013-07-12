@@ -73,60 +73,56 @@
     <Reference Include="System.Web.ApplicationServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Charts\BankLoanApproval.ashx" />
+    <Content Include="Charts\BankLoanApprovalToPeople.ashx" />
+    <Content Include="Charts\BudgetUsage.ashx" />
+    <Content Include="Charts\BudgetUsageCompare.ashx" />
+    <Content Include="Charts\buttonBack%402x.png" />
+    <Content Include="Charts\buttonBackground.png" />
+    <Content Include="Charts\buttonHome%402x.png" />
+    <Content Include="Charts\buttonLogout%402x.png" />
+    <Content Include="Charts\buttonOK%402x.png" />
+    <Content Include="Charts\EmployeeRelatedBudget.ashx" />
+    <Content Include="Charts\EmployeeRelatedBudgetCompare.ashx" />
+    <Content Include="Charts\EstimatedFundMember.ashx" />
+    <Content Include="Charts\EstimatedFundMemberCompare.ashx" />
+    <Content Include="Charts\EstimatedRetirement.ashx" />
+    <Content Include="Charts\FirstCarStatusByAmount.ashx" />
+    <Content Include="Charts\FirstCarStatusByPeople.ashx" />
+    <Content Include="Charts\footer.png" />
+    <Content Include="Charts\headerBullet%402x.png" />
+    <Content Include="Charts\iPad\NotImplemented.png" />
+    <Content Include="Charts\menuBackground.png" />
+    <Content Include="Charts\menuBullet.png" />
+    <Content Include="Charts\menuBulletSelected%402x.png" />
+    <Content Include="Charts\menuBulletSelected.png" />
+    <Content Include="Charts\menuTab.png" />
     <Content Include="Charts\NotImplemented.png" />
-    <Content Include="Images\buttonBack%402x.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\buttonCompare%402x.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\buttonCompare.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\buttonCompareSelected.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\buttonDetail%402x.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\buttonDetail.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\buttonDetailSelected.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\buttonEmpty%402x.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\buttonEmpty.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\buttonHome%402x.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\buttonLogout%402x.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\buttonOK%402x.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\footer%402x.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\footer.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\headerBullet%402x.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\headerBullet.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Content Include="Charts\NumberOfEmployee.ashx" />
+    <Content Include="Charts\NumberOfEmployeeCompare.ashx" />
+    <Content Include="Charts\NumberOfEmployeeDetail.ashx" />
+    <Content Include="Charts\RetirementFundUsage.ashx" />
+    <Content Include="Charts\title.png" />
+    <Content Include="Charts\WarrantFundProviding.ashx" />
+    <Content Include="Charts\WarrantFundProvidingToPeople.ashx" />
+    <Content Include="Images\buttonBack%402x.png" />
+    <Content Include="Images\buttonCompare%402x.png" />
+    <Content Include="Images\buttonCompare.png" />
+    <Content Include="Images\buttonCompareSelected.png" />
+    <Content Include="Images\buttonDetail%402x.png" />
+    <Content Include="Images\buttonDetail.png" />
+    <Content Include="Images\buttonDetailSelected.png" />
+    <Content Include="Images\buttonEmpty%402x.png" />
+    <Content Include="Images\buttonEmpty.png" />
+    <Content Include="Images\buttonHome%402x.png" />
+    <Content Include="Images\buttonLogout%402x.png" />
+    <Content Include="Images\buttonOK%402x.png" />
+    <Content Include="Images\footer%402x.png" />
+    <Content Include="Images\footer.png" />
+    <Content Include="Images\headerBullet%402x.png" />
+    <Content Include="Images\headerBullet.png" />
     <Content Include="Images\iPad\buttonBack%402x.png" />
     <Content Include="Images\iPad\buttonBackground.png" />
-    <Content Include="Images\iPad\buttonCompare%402x.png" />
-    <Content Include="Images\iPad\buttonDetail%402x.png" />
-    <Content Include="Images\iPad\buttonEmpty%402x.png" />
     <Content Include="Images\iPad\buttonHome%402x.png" />
     <Content Include="Images\iPad\buttonLogout%402x.png" />
     <Content Include="Images\iPad\buttonOK%402x.png" />
@@ -138,51 +134,21 @@
     <Content Include="Images\iPad\menuBulletSelected.png" />
     <Content Include="Images\iPad\menuTab.png" />
     <Content Include="Images\iPad\title.png" />
-    <Content Include="Images\menuBackground%402x.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\menuBackground.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\menuBullet%402x.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\menuBullet.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\menuBulletSelected%402x.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\menuBulletSelected.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\spinner%402x.gif">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\spinner.gif">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\spinner2%402x.gif">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\title%402x.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\title.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\topButtons%402x.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\topButtons.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\topButtonsActive%402x.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\topButtonsActive.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Content Include="Images\menuBackground%402x.png" />
+    <Content Include="Images\menuBackground.png" />
+    <Content Include="Images\menuBullet%402x.png" />
+    <Content Include="Images\menuBullet.png" />
+    <Content Include="Images\menuBulletSelected%402x.png" />
+    <Content Include="Images\menuBulletSelected.png" />
+    <Content Include="Images\spinner%402x.gif" />
+    <Content Include="Images\spinner.gif" />
+    <Content Include="Images\spinner2%402x.gif" />
+    <Content Include="Images\title%402x.png" />
+    <Content Include="Images\title.png" />
+    <Content Include="Images\topButtons%402x.png" />
+    <Content Include="Images\topButtons.png" />
+    <Content Include="Images\topButtonsActive%402x.png" />
+    <Content Include="Images\topButtonsActive.png" />
     <Content Include="iPad.aspx" />
     <Content Include="iPhone.aspx" />
     <Content Include="Scripts\Button.js" />
@@ -239,57 +205,134 @@
   <ItemGroup>
     <Compile Include="Charts\BankLoanApproval.ashx.cs">
       <DependentUpon>BankLoanApproval.ashx</DependentUpon>
+      <SubType>Code</SubType>
     </Compile>
     <Compile Include="Charts\BankLoanApprovalToPeople.ashx.cs">
       <DependentUpon>BankLoanApprovalToPeople.ashx</DependentUpon>
+      <SubType>Code</SubType>
     </Compile>
     <Compile Include="Charts\BudgetUsage.ashx.cs">
       <DependentUpon>BudgetUsage.ashx</DependentUpon>
+      <SubType>Code</SubType>
     </Compile>
     <Compile Include="Charts\BudgetUsageCompare.ashx.cs">
       <DependentUpon>BudgetUsageCompare.ashx</DependentUpon>
+      <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Charts\ColorPalette.cs" />
-    <Compile Include="Charts\ColumnChart.cs" />
-    <Compile Include="Charts\EstimatedFundMemberCompare.ashx.cs">
-      <DependentUpon>EstimatedFundMemberCompare.ashx</DependentUpon>
+    <Compile Include="Charts\ColorPalette.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Charts\ColumnChart.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Charts\EmployeeRelatedBudget.ashx.cs">
+      <DependentUpon>EmployeeRelatedBudget.ashx</DependentUpon>
+      <SubType>Code</SubType>
     </Compile>
     <Compile Include="Charts\EmployeeRelatedBudgetCompare.ashx.cs">
       <DependentUpon>EmployeeRelatedBudgetCompare.ashx</DependentUpon>
-    </Compile>
-    <Compile Include="Charts\FirstCarStatusByAmount.ashx.cs">
-      <DependentUpon>FirstCarStatusByAmount.ashx</DependentUpon>
-    </Compile>
-    <Compile Include="Charts\FirstCarStatusByPeople.ashx.cs">
-      <DependentUpon>FirstCarStatusByPeople.ashx</DependentUpon>
-    </Compile>
-    <Compile Include="Charts\NumberOfEmployee.ashx.cs">
-      <DependentUpon>NumberOfEmployee.ashx</DependentUpon>
-    </Compile>
-    <Compile Include="Charts\NumberOfEmployeeCompare.ashx.cs">
-      <DependentUpon>NumberOfEmployeeCompare.ashx</DependentUpon>
-    </Compile>
-    <Compile Include="Charts\NumberOfEmployeeDetail.ashx.cs">
-      <DependentUpon>NumberOfEmployeeDetail.ashx</DependentUpon>
-    </Compile>
-    <Compile Include="Charts\PieChart.cs" />
-    <Compile Include="Charts\EmployeeRelatedBudget.ashx.cs">
-      <DependentUpon>EmployeeRelatedBudget.ashx</DependentUpon>
+      <SubType>Code</SubType>
     </Compile>
     <Compile Include="Charts\EstimatedFundMember.ashx.cs">
       <DependentUpon>EstimatedFundMember.ashx</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Charts\EstimatedFundMemberCompare.ashx.cs">
+      <DependentUpon>EstimatedFundMemberCompare.ashx</DependentUpon>
+      <SubType>Code</SubType>
     </Compile>
     <Compile Include="Charts\EstimatedRetirement.ashx.cs">
       <DependentUpon>EstimatedRetirement.ashx</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Charts\FirstCarStatusByAmount.ashx.cs">
+      <DependentUpon>FirstCarStatusByAmount.ashx</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Charts\FirstCarStatusByPeople.ashx.cs">
+      <DependentUpon>FirstCarStatusByPeople.ashx</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Charts\iPad\BankLoanApproval.ashx.cs">
+      <DependentUpon>BankLoanApproval.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Charts\iPad\BankLoanApprovalToPeople.ashx.cs">
+      <DependentUpon>BankLoanApprovalToPeople.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Charts\iPad\BudgetUsage.ashx.cs">
+      <DependentUpon>BudgetUsage.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Charts\iPad\BudgetUsageCompare.ashx.cs">
+      <DependentUpon>BudgetUsageCompare.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Charts\iPad\ColorPalette.cs" />
+    <Compile Include="Charts\iPad\ColumnChart.cs" />
+    <Compile Include="Charts\iPad\EmployeeRelatedBudget.ashx.cs">
+      <DependentUpon>EmployeeRelatedBudget.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Charts\iPad\EmployeeRelatedBudgetCompare.ashx.cs">
+      <DependentUpon>EmployeeRelatedBudgetCompare.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Charts\iPad\EstimatedFundMember.ashx.cs">
+      <DependentUpon>EstimatedFundMember.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Charts\iPad\EstimatedFundMemberCompare.ashx.cs">
+      <DependentUpon>EstimatedFundMemberCompare.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Charts\iPad\EstimatedRetirement.ashx.cs">
+      <DependentUpon>EstimatedRetirement.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Charts\iPad\FirstCarStatusByAmount.ashx.cs">
+      <DependentUpon>FirstCarStatusByAmount.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Charts\iPad\FirstCarStatusByPeople.ashx.cs">
+      <DependentUpon>FirstCarStatusByPeople.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Charts\iPad\NumberOfEmployee.ashx.cs">
+      <DependentUpon>NumberOfEmployee.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Charts\iPad\NumberOfEmployeeCompare.ashx.cs">
+      <DependentUpon>NumberOfEmployeeCompare.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Charts\iPad\NumberOfEmployeeDetail.ashx.cs">
+      <DependentUpon>NumberOfEmployeeDetail.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Charts\iPad\PieChart.cs" />
+    <Compile Include="Charts\iPad\RetirementFundUsage.ashx.cs">
+      <DependentUpon>RetirementFundUsage.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Charts\iPad\WarrantFundProviding.ashx.cs">
+      <DependentUpon>WarrantFundProviding.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Charts\iPad\WarrantFundProvidingToPeople.ashx.cs">
+      <DependentUpon>WarrantFundProvidingToPeople.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Charts\NumberOfEmployee.ashx.cs">
+      <DependentUpon>NumberOfEmployee.ashx</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Charts\NumberOfEmployeeCompare.ashx.cs">
+      <DependentUpon>NumberOfEmployeeCompare.ashx</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Charts\NumberOfEmployeeDetail.ashx.cs">
+      <DependentUpon>NumberOfEmployeeDetail.ashx</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Charts\PieChart.cs">
+      <SubType>Code</SubType>
     </Compile>
     <Compile Include="Charts\RetirementFundUsage.ashx.cs">
       <DependentUpon>RetirementFundUsage.ashx</DependentUpon>
+      <SubType>Code</SubType>
     </Compile>
     <Compile Include="Charts\WarrantFundProviding.ashx.cs">
       <DependentUpon>WarrantFundProviding.ashx</DependentUpon>
+      <SubType>Code</SubType>
     </Compile>
     <Compile Include="Charts\WarrantFundProvidingToPeople.ashx.cs">
       <DependentUpon>WarrantFundProvidingToPeople.ashx</DependentUpon>
+      <SubType>Code</SubType>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -326,29 +369,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Charts\EstimatedFundMemberCompare.ashx" />
-  </ItemGroup>
-  <ItemGroup>
     <EntityDeploy Include="Model\EISModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>EISModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Charts\EstimatedRetirement.ashx" />
-    <Content Include="Charts\EstimatedFundMember.ashx" />
-    <Content Include="Charts\BudgetUsage.ashx" />
-    <Content Include="Charts\EmployeeRelatedBudget.ashx" />
-    <Content Include="Charts\RetirementFundUsage.ashx" />
-    <Content Include="Charts\WarrantFundProviding.ashx" />
-    <Content Include="Charts\WarrantFundProvidingToPeople.ashx" />
-    <Content Include="Charts\BankLoanApproval.ashx" />
-    <Content Include="Charts\BankLoanApprovalToPeople.ashx" />
-    <Content Include="Charts\FirstCarStatusByPeople.ashx" />
-    <Content Include="Charts\FirstCarStatusByAmount.ashx" />
-    <Content Include="Charts\NumberOfEmployeeDetail.ashx" />
-    <Content Include="Charts\NumberOfEmployeeCompare.ashx" />
-    <Content Include="Charts\BudgetUsageCompare.ashx" />
-    <Content Include="Charts\EmployeeRelatedBudgetCompare.ashx" />
-    <Content Include="Charts\NumberOfEmployee.ashx" />
     <Content Include="Services\LoginService.ashx" />
     <Content Include="Styles\Fonts\Circular.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -357,7 +381,25 @@
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Charts\iPad\BankLoanApproval.ashx" />
+    <Content Include="Charts\iPad\BankLoanApprovalToPeople.ashx" />
+    <Content Include="Charts\iPad\BudgetUsage.ashx" />
+    <Content Include="Charts\iPad\BudgetUsageCompare.ashx" />
+    <Content Include="Charts\iPad\EmployeeRelatedBudget.ashx" />
+    <Content Include="Charts\iPad\EmployeeRelatedBudgetCompare.ashx" />
+    <Content Include="Charts\iPad\EstimatedFundMember.ashx" />
+    <Content Include="Charts\iPad\EstimatedFundMemberCompare.ashx" />
+    <Content Include="Charts\iPad\EstimatedRetirement.ashx" />
+    <Content Include="Charts\iPad\FirstCarStatusByAmount.ashx" />
+    <Content Include="Charts\iPad\FirstCarStatusByPeople.ashx" />
+    <Content Include="Charts\iPad\NumberOfEmployee.ashx" />
+    <Content Include="Charts\iPad\NumberOfEmployeeCompare.ashx" />
+    <Content Include="Charts\iPad\NumberOfEmployeeDetail.ashx" />
+    <Content Include="Charts\iPad\RetirementFundUsage.ashx" />
+    <Content Include="Charts\iPad\WarrantFundProviding.ashx" />
+    <Content Include="Charts\iPad\WarrantFundProvidingToPeople.ashx" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
   <ProjectExtensions>
