@@ -124,8 +124,9 @@
     </Content>
     <Content Include="Images\iPad\buttonBack%402x.png" />
     <Content Include="Images\iPad\buttonBackground.png" />
-    <Content Include="Images\iPad\buttonCompare.png" />
-    <Content Include="Images\iPad\buttonDetail.png" />
+    <Content Include="Images\iPad\buttonCompare%402x.png" />
+    <Content Include="Images\iPad\buttonDetail%402x.png" />
+    <Content Include="Images\iPad\buttonEmpty%402x.png" />
     <Content Include="Images\iPad\buttonHome%402x.png" />
     <Content Include="Images\iPad\buttonLogout%402x.png" />
     <Content Include="Images\iPad\buttonOK%402x.png" />

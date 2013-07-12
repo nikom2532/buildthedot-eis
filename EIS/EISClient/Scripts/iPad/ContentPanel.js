@@ -135,7 +135,8 @@
             left: 80 // iphone 0
         }, 500);
         $("#bottomBar").animate({
-            top: -15//410
+            top: -250,//410
+            left: 500
         }, 500, callback);
     }
 
@@ -146,7 +147,7 @@
         }, 500);
         $("#bottomBar").animate({
             top: 769,
-            left: 950
+            left: 700
         }, 500, callback);
     }
 }
