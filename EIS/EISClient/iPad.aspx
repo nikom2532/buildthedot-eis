@@ -96,20 +96,19 @@
                 </div>
               
             </div>
-            <div id="contentPanel" style="position:absolute; left:1024px; top:173px; width:928px; height: 500px; z-index:2;">
+            <div id="contentPanel" style="position:absolute; left:1024px; top:173px; width:928px; height: 768px; z-index:2;">
                 <div id="titleLabel" style="position:absolute; left:0px; top:0px; width:883px; height:40px; z-index:2;" class="titleLabel">อัตรากำลัง</div>
                 <div style="position:absolute; top:40px; width:928px">
                     <div id="yearLabel" style="position:absolute; right:0px; top:20px; width:225px; height: 30px; z-index:2;" class="yearLabel">ปีงบประมาณ <span id="yearText"></span></div>
-                    <div id="imageBox" style="position:absolute; top:0px; left:0px; width: 680px; height: 412px; z-index:1; background-color:White;"></div>
-                    <div id="imageBox2" style="position:absolute; top:0px; left:0px;  width: 680px; height: 412px; z-index:1; background-color:White;"></div>                
+                    <div id="imageBox" style="position:absolute; top:0px; left:0px; width: 680px; height: 768px; z-index:1; background-color:White;"></div>
+                    <div id="imageBox2" style="position:absolute; top:0px; left:0px;  width: 680px; height: 768px; z-index:1; background-color:White;"></div>                
                 </div>
             </div>
         
-           <div id="bottomBar" style="position:absolute; left:0; top:670px; width:1024px; height:50px; z-index:5; margin-left: auto; margin-right: auto; display: table-cell; text-align: center;">
-                <div id="bottomBarInner" style="width:100%; height:100%;"></div>
-      
+            <div id="bottomBar" style="position:absolute; left:0; top:670px; width:1024px; height:50px; z-index:5; margin-left: auto; margin-right: auto; display: table-cell; text-align: center;">
+                <div id="bottomBarInner" style="position:absolute; left:0; top:670px; width:1024px; height:50px; z-index:5; margin-left: auto; margin-right: auto; display: table-cell; text-align: center;" style="width:100%; height:100%;"></div>
             </div>
-           
+     
         </div>
 
     </div>
