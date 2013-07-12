@@ -17,7 +17,7 @@
     this.Initialize = function (elementId, cssClass) {
         if (!elementId) {
             var parent = $("#" + parentId);
-            _element = $('<span style="top: ' + _y + 'px; left: ' + _x + 'px; width: ' + _width + 'px; height: ' + _height + 'px; display:none; text-align:center;vertical-align: middle;" class="' + _cssClass + '">' + _text + '</span>');
+            _element = $('<span style="top: ' + _y + 'px; left: ' + _x + 'px; width: ' + _width + 'px; height: ' + _height + 'px; display:none;padding-top:50px;position:absolute;" class="' + _cssClass + '">' + _text + '</span>');
             parent.append(_element);
         } else {
             _element = $("#" + elementId);

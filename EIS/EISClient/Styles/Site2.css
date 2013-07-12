@@ -216,41 +216,41 @@
 {
     background: url(../Images/iPad/buttonDetail@2x.png);
     background-repeat: no-repeat;
-    background-size: 218px 103px;
+    background-size: 218px 103px;/**/
     
 }
 
 .buttonDetailSelected
 {
-    background-position: -131px 0px;
+    background-position: -110px 0px;
 }
 
 .buttonCompare
 {
-    background: url(../Images/buttonCompare@2x.png);
+    background: url(../Images/iPad/buttonCompare@2x.png);
     background-repeat: no-repeat;
-    background-size: 262px 50px;
+    background-size: 218px 103px;/*262px 50px*/
 }
 
 .buttonCompareSelected
 {
-    background-position: -131px 0px;
+    background-position: -110px 0px;
 }
 
 .buttonEmpty
 {
-    background: url(../Images/buttonEmpty@2x.png);
+    background: url(../Images/iPad/buttonEmpty@2x.png);
     background-repeat: no-repeat;
-    background-size: 154px 50px;
+    background-size: 302px 119px;
     color: White;
     text-align: center;
     font-family: Arial;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 40px;
     margin-left: -3px;
 }
 
 .buttonEmptySelected
 {
-    background-position: -77px 0px;
+    background-position: -146px 0px;
 }
