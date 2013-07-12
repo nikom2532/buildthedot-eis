@@ -1,4 +1,4 @@
-﻿function ContentPanel(elementId) {
+﻿function ContentPanel(elementId) { // elementId = contentPanel
 
     var _this = this;
     var _elementId = elementId;
@@ -135,7 +135,7 @@
             left: 80 // iphone 0
         }, 500);
         $("#bottomBar").animate({
-            top: 670//410
+            top: -10//410
         }, 500, callback);
     }
 
@@ -145,7 +145,7 @@
             left: 1024//iphone 320
         }, 500);
         $("#bottomBar").animate({
-            top: 670
+            top: 769
         }, 500, callback);
     }
 }

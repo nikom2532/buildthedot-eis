@@ -7,7 +7,7 @@
 
     this.Initialize = function () {
         _element.width(680).height(412);
-        _imgElement = $("<img width='680px' height='412px' style='display:none; position:absolute; top: 20px;' class='imageBox'/>");
+        _imgElement = $("<img width='680px' height='500px' style='display:none; position:absolute; top: 20px;' class='imageBox'/>");
         _element.append(_imgElement);
         _imgElement.on("load", onImageLoaded.bind(this));
         _imgElement.draggable({ axis: "y", stop: onImageDragStop.bind(this) });

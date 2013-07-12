@@ -24,22 +24,22 @@ var tempPattern = null;
 $(document).ready(function () {
 
     loadingPanel = new LoadingPanel();
-    loadingPanel.Initialize();
+    loadingPanel.Initialize(); // initial action see in LoadingPanel.js
 
     passwordLoginPanel = new PasswordLoginPanel();
-    passwordLoginPanel.Initialize();
+    passwordLoginPanel.Initialize(); // initial action see in PasswordLoginPanel.js
     $(passwordLoginPanel).on(passwordLoginPanel.Events.Entered, passwordEntered);
 
     patternLoginPanel = new PatternLoginPanel();
-    patternLoginPanel.Initialize();
+    patternLoginPanel.Initialize(); // initial action see in PatternLoginPanel.js
     $(patternLoginPanel).on(patternLoginPanel.Events.Entered, patternEntered);
 
     menu = new Menu("menuPanel");
-    menu.Initialize();
+    menu.Initialize(); // initial action see in Menu.js
     $(menu).on(menu.Events.MenuSelected, menuSelected);
 
     menuBar = new MenuBar("menuBar");
-    menuBar.Initialize();
+    menuBar.Initialize(); //see in MenuBar.js
     $(menuBar).on(menuBar.Events.MenuSelected, menuBarSelected);
 
     var today = new Date();
