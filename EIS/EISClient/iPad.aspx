@@ -27,7 +27,7 @@
 </head>
 <body>
     <div id="container" style="height:100%; position:relative;">
-     <div id="titleBar" style="margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; position:fixed; left:0px; top:0px; z-index:5; width:1024px; height:  138px;"></div>
+     <div id="titleBar" style="margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; position:absolute; left:0px; top:0px; z-index:5; width:1024px; height:  138px;"></div>
         <div id="footer" style="height:51px; position:fixed; bottom:0px; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; z-index: 5;">
             <img src="Images/iPad/footer.png" width="1024" height="51" />
         </div>
@@ -50,7 +50,7 @@
             <div id="patternMessageBox" class="semiTransparentBox" style="display:none; position: absolute; top: 65px; left: 32px; width: 250px; height: 30px;">
                 <div id="patternMessage" style="position:absolute; top:3px; width:100%; text-align:center; font-size: 18px;">รหัสผ่านไม่ถูกต้อง กรุณาลองอีกครั้ง</div>
             </div>
-            <div id="patternPanel" style="position: absolute; top: 170px; left: 254px;"></div>
+            <div id="patternPanel" style="position: absolute; top: 170px; left: 285px;"></div>
             <div id="patternForget" style="display:none; position: absolute; top: 645px; left: 355px; width: 250px; height: 30px;">
                 <div style="position:absolute; top:3px; width:100%; text-align:center; font-size: 18px; text-decoration: underline;">ลืมรหัสผ่าน?</div>
             </div>
