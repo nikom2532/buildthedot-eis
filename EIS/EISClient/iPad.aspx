@@ -41,7 +41,7 @@
             <div class="semiTransparentBox" style="position: absolute; top: 240px; left: 227px; width: 573px; height: 210px;">
                 <div id="loginPasswordMessage" style="position:absolute; top:40px; width:100%; text-align:center; font-size: 27.5px;">กรุณาใส่รหัสผ่านเพื่อเข้าระบบครั้งแรก</div>
                 <div style="position:absolute; top:50px; width:100%; text-align:center;">
-                    <input id="passwordInput" type="password" style="width:395px; position: absolute; top: 45px; left: 57px; height: 45px; font-size: 27.5px;"/>
+                    <input id="passwordInput" type="password" style="width:355px; position: absolute; top: 45px; left: 57px; height: 45px; font-size: 27.5px;"/>
                     <div id="okButton" class="okButton" style="width:64px; height: 70px; position: absolute; top: 40px; left: 465px;"></div>
                 </div>
             </div>
