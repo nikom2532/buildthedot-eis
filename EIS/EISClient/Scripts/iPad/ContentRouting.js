@@ -111,14 +111,14 @@
                 imageUrl: "Charts/iPad/FirstCarStatusByPeople.ashx",
                 draggable: false,
                 buttonText: "จำนวนคน",
-                fontSize: 10
+                fontSize: 18
             },
             two: {
                 title: "รถคันแรก - จำนวนเงิน",
                 imageUrl: "Charts/iPad/FirstCarStatusByAmount.ashx",
                 draggable: false,
                 buttonText: "จำนวนเงิน",
-                fontSize: 10
+                fontSize: 18
             }
         }
     }
