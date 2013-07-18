@@ -75,28 +75,28 @@
                 title: "การอนุมัติเงินกู้ของสถาบันการเงิน",
                 imageUrl: "Charts/iPad/BankLoanApproval.ashx",
                 draggable: false,
-                buttonText: "อนุมัติกู้ (เงิน)",
+                buttonText: "อนุมัติกู้<br />(เงิน)",
                 fontSize: 18
             },
             two: {
                 title: "การอนุมัติเงินกู้ของสถาบันการเงิน",
                 imageUrl: "Charts/iPad/BankLoanApprovalToPeople.ashx",
                 draggable: false,
-                buttonText: "อนุมัติกู้ (คน)",
+                buttonText: "อนุมัติกู้<br />(คน)",
                 fontSize: 18
             },
             three: {
                 title: "การออกหนังสือรับรองสิทธิ์",
                 imageUrl: "Charts/iPad/WarrantFundProviding.ashx",
                 draggable: false,
-                buttonText: "หนังสือรับรอง <br />(เงิน)",
+                buttonText: "หนังสือรับรอง<br />(เงิน)",
                 fontSize: 18
             },
             four: {
                 title: "การออกหนังสือรับรองสิทธิ์",
                 imageUrl: "Charts/iPad/WarrantFundProvidingToPeople.ashx",
                 draggable: false,
-                buttonText: "หนังสือรับรอง (คน)",
+                buttonText: "หนังสือรับรอง<br />(คน)",
                 fontSize: 18
             }
         }
