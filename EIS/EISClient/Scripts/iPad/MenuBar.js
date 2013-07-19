@@ -44,12 +44,13 @@
 
     function buttonHomeTouch(event) {
         $(this).toggleClass("buttonHomeSelected");
-        $("#footer").show();
     }
 
     function buttonHomeTouchEnd(event) {
         $(this).toggleClass("buttonHomeSelected");
         $(_this).trigger(_this.Events.MenuSelected, ["home"]);
+        //$("#footer").delay(800).show();
+        $("#footer").delay(300).slideDown(300);
     }
 
     function buttonLogoutTouch(event) {
