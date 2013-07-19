@@ -33,6 +33,7 @@
 
     function menuTouch() {
         $(this).toggleClass("menuItemSelected");
+        $("#footer").hide();
     }
 
     function menuTouchEnd() {
@@ -40,7 +41,7 @@
         var menuRel = $(this).attr("rel");
         $(_this).trigger(_this.Events.MenuSelected, [menuRel]);
         _this.Hide();
+        $("#footer").css("display", "none");
     }
-
 }
 

@@ -44,6 +44,7 @@
 
     function buttonHomeTouch(event) {
         $(this).toggleClass("buttonHomeSelected");
+        $("#footer").show();
     }
 
     function buttonHomeTouchEnd(event) {
