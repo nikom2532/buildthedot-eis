@@ -3,10 +3,10 @@
     var _this = this;
     var _element = $("#"+elementId);
     var _imgElement = null;
-    var _currentImgHeight = 412; 
+    var _currentImgHeight = 520; 
 
     this.Initialize = function () {
-        _element.width(680).height(412);
+        _element.width(680).height(520);
         _imgElement = $("<img width='680px' height='500px' style='display:none; position:absolute; top: 20px;' class='imageBox'/>");
         _element.append(_imgElement);
         _imgElement.on("load", onImageLoaded.bind(this));
@@ -14,7 +14,7 @@
     }
 
     this.LoadImage = function (url, draggable, height) {
-        var imgHeight = 412;
+        var imgHeight = 520;
         if (height) {
             imgHeight = imgHeight * height;
         }
