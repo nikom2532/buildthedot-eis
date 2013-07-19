@@ -43,7 +43,7 @@
         _this.Hide();
         //$("#footer").css("display", "none");
         //$("#footer").delay(8000).hide();
-        $("#footer").delay(300).slideUp(300)
+        $("#footer").delay(300).slideUp(100)
     }
 }
 

@@ -50,7 +50,7 @@
         $(this).toggleClass("buttonHomeSelected");
         $(_this).trigger(_this.Events.MenuSelected, ["home"]);
         //$("#footer").delay(800).show();
-        $("#footer").delay(300).slideDown(300);
+        $("#footer").delay(300).slideDown(100);
     }
 
     function buttonLogoutTouch(event) {
